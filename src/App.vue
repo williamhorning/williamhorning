@@ -10,7 +10,7 @@
       <router-link to="/blog">Blog</router-link>
       <router-link to="/clock">Clock</router-link>
       <router-link to="/dns">DNS lookup app</router-link>
-      <router-link to="/projects">Projects</router-link>
+      <a href="https://github.com/wgyt/projects">Projects</a>
     </div>
   </nav>
   <br />
