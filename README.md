@@ -1,4 +1,4 @@
-# website template
+# site-v7
 ## Developing this
 ### yarn dev
 Start a dev server
