@@ -11,4 +11,9 @@ export default defineConfig({
       routeStyle: 'nuxt',
     }),
   ],
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
 });

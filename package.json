@@ -8,13 +8,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.2",
+    "highlight.js": "^11.5.1",
     "postcss": "^8.4.7",
     "sass": "^1.49.9",
     "tailwindcss": "^3.0.23",
     "vite-plugin-pages": "^0.21.4",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.13",
+    "vue3-markdown-it": "^1.0.10"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
