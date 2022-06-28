@@ -8,7 +8,7 @@
     <a href="https://vignetteapp.org/">Vignette website</a>, the person working
     on <a href="https://toastpack.dev/">toastpack</a>, the person behind
     <a href="https://ineedmore.domains/">ineedmore.domains</a>, and tons of
-    <router-link to="/projects">other projects</router-link>.
+    <a href="https://github.com/wgyt/projects">other projects</a>.
   </p>
   <h2>Links</h2>
   <div>
