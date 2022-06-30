@@ -34,7 +34,7 @@
     async mounted() {
       this.posts = await (
         await fetch(
-          'https://horseman.ceru.dev/v1/models/william-horning-blog-platform/objects?key=gG5fDSIBpy-S'
+          'https://horseman.ceru.dev/v1/models/william-horning-blog-platform/objects?key=l_1VPtaB1p7X'
         )
       ).json();
     },
