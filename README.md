@@ -2,7 +2,7 @@
 
 ![William Horning Projects](https://raw.githubusercontent.com/wgyt/projects/main/assets/banner.png)
 
-# William Horning Projects
+# William Horning's Projects
 A small list of my projects
 </center>
 
