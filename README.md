@@ -1,10 +1,7 @@
-<center>
-
 ![William Horning Projects](https://raw.githubusercontent.com/wgyt/projects/main/assets/banner.png)
 
 # William Horning's Projects
 A small list of my projects
-</center>
 
 ## archives
 
@@ -36,7 +33,7 @@ NPM package: [@wgyt/cloudlink](https://www.npmjs.com/package/@wgyt/cloudlink)
 
 Docs site: [williamhorning on Notion](https://williamhorning.notion.site/williamhorning/Cloudlink-JS-5d34a6e3ad8c498c83a8675509c6a0c1)
 
-A simple Cloudlink client build in Typescript.
+A simple Cloudlink client built in Typescript.
 
 ## ineedmore.domains
 
