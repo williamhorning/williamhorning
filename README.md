@@ -28,7 +28,7 @@ Guilded invite: [Bridge Bot](https://www.guilded.gg/b/61c2db90-621b-4d54-87b9-fb
 
 A simple bot that allows you to bridge multiple chat apps. Right now it bridges Discord and Guilded.
 
-## cloudlink.js
+## cloudlink.js (deprecated as of 07/02/2022)
 
 Github repo: [wgyt/cloudlink](https://github.com/wgyt/cloudlink)
 
