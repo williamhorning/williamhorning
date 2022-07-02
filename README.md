@@ -9,7 +9,6 @@ Hi there 👋, I'm William Horning, a student and developer with random ideas.
 ---
 
 ## Projects
-A small list of my projects
 
 ### archives
 
