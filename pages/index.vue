@@ -14,7 +14,7 @@
   <div>
     <a href="https://discord.gg/K2nBQa9zv4">Discord</a><br />
     <a href="https://github.com/williamhorning">Github</a><br />
-    <a href="https://npmjs.com/~wgyt">npm</a><br />
+    <a href="https://npmjs.com/~williamhorning">npm</a><br />
     <a href="https://reddit.com/u/-william27-">Reddit</a><br />
     <a href="https://open.spotify.com/user/lcl93130l3r4kj8z9g06ixoav">Spotify</a
     ><br />
