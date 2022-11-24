@@ -1,4 +1,4 @@
 <template>
-  <h2>Page not found</h2>
+  <h1>Page not found</h1>
   <router-link to="/"><button>go home?</button></router-link>
 </template>

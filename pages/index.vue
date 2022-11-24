@@ -1,5 +1,5 @@
 <template>
-  <h2>About me</h2>
+  <h1>About me</h1>
   <p>
     Hi there 👋
     <br />
