@@ -19,6 +19,7 @@
 		},
 		async mounted() {
 			let postIDs = [
+        'testing-123-11-23-6',
 				'How-I-set-up-my-ghost-site-site-v6-11-23',
 				'Why-Im-making-a-package-manager-11-23',
 			];
