@@ -1,8 +1,2 @@
-# site-v7
-## Developing this
-### yarn dev
-Start a dev server
-### yarn build / yarn generate
-Build the site
-### yarn preview
-Preview the built site
+# @williamhorning/site-v7
+This is the source code for my personal website, [williamhorning.com](https://williamhorning.com). It was originally built with [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/). It is now just a static site using basic stuff.
