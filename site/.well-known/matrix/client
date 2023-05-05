@@ -1,0 +1,8 @@
+{
+	"m.homeserver": {
+		"base_url": "https://synapse.williamhorning.dev"
+	},
+	"m.identity_server": {
+		"base_url": "https://vector.im"
+	}
+}
