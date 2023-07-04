@@ -1,6 +1,6 @@
 {
 	"m.homeserver": {
-		"base_url": "https://synapse.williamhorning.dev"
+		"base_url": "https://dendrite.williamhorning.dev"
 	},
 	"m.identity_server": {
 		"base_url": "https://vector.im"
