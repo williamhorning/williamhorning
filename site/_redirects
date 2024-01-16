@@ -1,0 +1,5 @@
+/go/pyware-surface https://drive.google.com/uc?export=download&id=1tq7fgToT-Xv7DlNXURAMfh7jBsXj_w-9
+/go/msft-rail https://www.figma.com/file/E1vfnNh3jGqoBuoweC2tbT/Untitled
+/go/krameria-laws https://williamhorning.notion.site/Bills-1574dc1fc30349cb83ae18ab212d3047
+/go/bolt https://github.com/williamhorning/bolt
+/bolt/x/:package/:version/* https://raw.githubusercontent.com/williamhorning/bolt/:version/packages/:package/:splat
