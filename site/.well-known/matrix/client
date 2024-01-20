@@ -1,5 +1,5 @@
 {
   "m.homeserver": {
-    "base_url": "https://dendrite.williamhorning.dev"
+    "base_url": "https://iovm-dendrite.williamhorning.eu.org"
   }
 }
