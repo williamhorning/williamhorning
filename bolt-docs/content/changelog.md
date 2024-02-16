@@ -1,4 +1,4 @@
-# Changelog
+# changelog
 
 ## 0.5.4
 

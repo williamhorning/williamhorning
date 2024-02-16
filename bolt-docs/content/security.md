@@ -1,10 +1,9 @@
-# Security Policy
+# security policy
 
-Thanks for taking the time to look into the security of Bolt! We prioritize
-security and appriciate efforts to improve the security of Bolt. This document
-outlines how to work with us and what to do if you find a security issue.
+thanks for taking the time to look into the security of bolt! we appriciate
+you for looking into that, so here's how to report any security issues:
 
-## Supported Versions
+## supported versions
 
 | version | supported |
 | ------- | --------- |
@@ -12,23 +11,20 @@ outlines how to work with us and what to do if you find a security issue.
 | 0.4.x   | patches   |
 | <=0.3.1 | X         |
 
-## How to report a vulnerability
+## how to report security issues
 
-**_DO NOT, under any circumstances, report security issues on Github._**
+**_DO NOT report security issues on Github_**
 
-Please email any issues to
-[security@williamhorning.dev](mailto:security@williamhorning.dev) and include as
-much information as possible. We aim to solve all issues as quickly as possible
-and are willing to help you publish writeups after the issue is fixed.
+please email any issues to `security (at) williamhorning (dot) dev` and include as
+much information as possible and we'll try to fix those as quickly as possible
 
-### Things not to do:
+### things not to do:
 
-- exploiting any vulnerabilities that you find on instances of Bolt that are not
-  operated by yourself.
-- publishing or otherwise revealing the issue until it has been patched
-- attack physical security
+- exploiting vulnerabilities in versions of bolt you dont host
+- revealing the issue before it's been patched
+- attack physical things
 
-### Things we won't do:
+### things we won't do:
 
 - take legal action of any kind against you because of your report
 - reveal personal information to third-parties without your consent
