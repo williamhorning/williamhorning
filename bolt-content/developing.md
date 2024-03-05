@@ -42,7 +42,7 @@ export class example_plugin extends bolt_plugin<undefined> {
 hey there! thanks for being interested in developing bolt! as a project, work is
 mostly divided between a few different areas and repos:
 
-- `bolt` itself, sometimes refered to as `core`. this is where stuff like the
+- bolt itself, sometimes refered to as `core`. this is where stuff like the
   plugin api, bridge systems, and commands live
 - first-party plugins like `bolt-discord` that're used for the hosted version
 - the docs (part of `williamhorning/williamhorning`)
@@ -60,12 +60,12 @@ more are shared among these projects. see below for some guidelines
 - follow conventional commits and semver 2.0.0 whenever reasonable
 - try to not introduce breaking changes unless they're necessary
 
-### `bolt`
+### bolt
 
 bolt, also referred to as `core` or `lib`, is where all the public api,
 bridging, commands, migrations, and cli lives. none of the stuff in bolt should
 be platform-dependant, as all of that should live in plugins. it's further divided
-into a few different folders, each with their own standars. overall, try to not
+into a few different folders, each with their own standards. overall, try to not
 make breaking changes unless necessary
 
 #### `bolt/bridges`
