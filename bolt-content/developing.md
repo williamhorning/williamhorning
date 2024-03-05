@@ -25,7 +25,7 @@ export class example_plugin extends bolt_plugin<undefined> {
 
   constructor(bolt: Bolt) {
     bolt.on("event", () => {});
-    bolt.cmds.register({
+    bolt.cmds.set("hello", {
       name: "hello",
       description: "h",
       execute: () =>
