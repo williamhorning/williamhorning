@@ -44,10 +44,8 @@ mostly divided between a few different areas and repos:
 
 - `bolt` itself, sometimes refered to as `core`. this is where stuff like the
   plugin api, bridge systems, and commands live
-- `bolt-cli`, the fun package that implements the `bolt` cli
-- `bolt-docs`, the docs. part of `williamhorning/williamhorning`
-- `bolt-migrations`, the database migrations necessary to move between versions
 - first-party plugins like `bolt-discord` that're used for the hosted version
+- the docs (part of `williamhorning/williamhorning`)
 - upstream projects, including those we depend on, that are used by many people
 
 some stuff, such as consistent styling, commit messages, linting, and
@@ -64,33 +62,39 @@ more are shared among these projects. see below for some guidelines
 
 ### `bolt`
 
-bolt, also referred to as `core` or `bolt/lib`, is where all the public api,
-bridging, commands, and shared stuff lives. none of the stuff in bolt should
-be platform-dependant, as all of that should live in plugins. breaking changes
-are things that require changes to be made to consumers of public apis. try
-avoiding breaking changes, especially in the plugin system. if you do need to
-make breaking changes to the plugin system, please increment `boltversion` on
-the plugin class. also, try to not overly use the bolt name in exports.
+bolt, also referred to as `core` or `lib`, is where all the public api,
+bridging, commands, migrations, and cli lives. none of the stuff in bolt should
+be platform-dependant, as all of that should live in plugins. it's further divided
+into a few different folders, each with their own standars. overall, try to not
+make breaking changes unless necessary
 
-### `bolt-cli`
+#### `bolt/bridges`
 
-the cli is self-explanitory. keep it simple, don't break stuff unless you have to.
-the stuff from `bolt` and `bolt-migrations` are used here to provide a nice command
-line experience for those self-hosting.
+the bridging system exposes very few public api interfaces and it should stay that
+way, don't complicate things
 
-### `bolt-docs`
+#### `bolt/cli.ts`
 
-as part of `williamhorning/williamhorning`, the docs site should follow all the stuff
-there except for writing style and theming.
+try not messing with the cli, it's meant to be a nice command for self-hosting bolt
 
-### `bolt-migrations`
+#### `bolt/cmds`
 
-this exists to provide a simple way to migrate data. don't change stuff unless you
-have to, please make an issue if you're considering changes to this.
+the command system should also be simple. try to not do crazy things and split stuff
+if necessary
+
+#### `bolt/migrations` and `bolt/utils`
+
+please don't make changes unless really necessary, make an issue if you're considering
+changes to stuff in here
 
 ### first-party plugins
 
 try to follow the guidelines here and to match style
+
+### the docs
+
+as part of `williamhorning/williamhorning`, the docs site should follow all the stuff
+there except for writing style and theming.
 
 ### upstream projects
 

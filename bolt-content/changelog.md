@@ -1,5 +1,43 @@
 # changelog
 
+## 0.5.5
+
+_a merge and massive rewrite of 0.4.13 and 0.5.4_
+
+- update external dependencies
+- update code to match deno conventions
+- move docs to williamhorning/williamhorning
+
+### core
+
+- clean up docker image
+- remove unused thread code
+- reduce external dependencies
+- rewrite the bridge and commands system
+- rewrite the cli
+- add tests for commands, migrations, and utils
+- properly implement replies
+- use the right name for bridge commands
+- use more accurate timestamps
+
+### discord
+
+- fix timestamps for ping command
+- reimplement slash command support
+  = handle stickers and welcome messages properly
+
+### guilded
+
+- redo attachment/reply support
+- start embed bridge migration
+- fix issues with too many attachments
+- fix code blocks having odd line breaks
+
+### revolt
+
+- fix many of the flaws with embed support
+- fix issues with too many attachments
+
 ## 0.5.4
 
 - update docker example

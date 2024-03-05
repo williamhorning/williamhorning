@@ -68,20 +68,20 @@ a release branch and then install the bolt cli. use `bolt run` to run an instanc
 git clone https://github.com/williamhorning/bolt
 cd bolt
 git switch 0.5.5
-deno install -A --unstable-temporal --name bolt ./packages/bolt-cli/mod.ts
-bolt run
+deno install -A --unstable-temporal --name bolt ./packages/bolt/cli.ts
+bolt --run
 ```
 
 ### notes
 
 - don't do this in production
 - switch 0.5.5 with main to use the main branch
-- you'll need your own copy of mongodb and redis running
-- your config file will be in the directory you use `bolt run` in
+- you'll need your own copy of mongodb running
+- your config file will be in the directory you use `bolt --run` in
 
 # configuring bolt
 
-bolt looks for a config file passed using the `--config` flag passed to `bolt run`
+bolt looks for a config file passed using the `--config` flag passed to `bolt --run`
 or a `config.ts` file in the current directory. options you can pass are defined in
 the file `/packages/bolt/utils/config.ts`.
 
@@ -112,13 +112,13 @@ export default define_config({
 # database migrations
 
 between different versions of bolt, the way the database has been setup has changed
-signifigantly, and to account for differences, the `bolt migration` command in the
+signifigantly, and to account for differences, the `bolt --migrations` command in the
 cli should let you migrate between versions. if you need help, join the support server.
 the latest version listed in that tool is the one you should use with the latest version
 of bolt. a list of versions and which db version you can use is below:
 
-| Label    | Versions    |
+| Type     | Versions    |
 | -------- | ----------- |
-| Four     | <= 0.4.12   |
-| FourBeta | 0.4.0-0.5.0 |
-| Five     | >= 0.5.0    |
+| 0.4      | <= 0.4.12   |
+| 0.4-beta | 0.4.0-0.5.0 |
+| 0.5      | >= 0.5.0    |

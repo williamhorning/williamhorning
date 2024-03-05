@@ -40,16 +40,23 @@ links to this site
 
 tells you if the current channel is in a bridge
 
-### bridge join --bridge=\<name\>
+### bridge join --bridge \<name\>
 
 joins a bridge with the name given
 
-### bridge reset --bridge=[name]
+### bridge reset --bridge [name]
 
-_introduced on 0.5_
+_introduced in 0.5.0_
 
 resets this channels bridge with the name provided or the current bridges name
 
 ### bridge leave
 
 leaves the bridge the current channel is in
+
+### bridge toggle --setting [setting]
+
+toggle one of the following settings for a bridge:
+
+- realnames
+- editing_allowed
