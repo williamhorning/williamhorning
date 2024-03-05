@@ -24,7 +24,7 @@ _a merge and massive rewrite of 0.4.13 and 0.5.4_
 
 - fix timestamps for ping command
 - reimplement slash command support
-  = handle stickers and welcome messages properly
+- handle stickers and welcome messages properly
 
 ### guilded
 
