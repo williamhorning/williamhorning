@@ -1,5 +1,11 @@
 # changelog
 
+## 0.5.6
+
+- handle various errors better
+- use guilded api to create webhooks
+- fix readme links
+
 ## 0.5.5
 
 _a merge and massive rewrite of 0.4.13 and 0.5.4_
