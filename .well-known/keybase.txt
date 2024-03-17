@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/williamhorning
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://williamhorning.dev
+  * I am williamhorning (https://keybase.io/williamhorning) on keybase.
+  * I have a public key ASBsQILyfJxCoZ4DkNIx7PrLgeWQwuhoVWnos4vSWcuJQwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206c4082f27c9c42a19e0390d231ecfacb81e590c2e8685569e8b38bd259cb89430a",
+      "host": "keybase.io",
+      "kid": "01206c4082f27c9c42a19e0390d231ecfacb81e590c2e8685569e8b38bd259cb89430a",
+      "uid": "f88291f0a10f601f9fc3ac1627945d19",
+      "username": "williamhorning"
+    },
+    "merkle_root": {
+      "ctime": 1710652440,
+      "hash": "b5fa96978953aae1e70f0272a6cd803853fc8b9fc940119a038c6f436196bf34f36f7ff476a5f9ef30a508bed4c11675754bcd1bea4e61a0c56566d233c7042a",
+      "hash_meta": "7237856e9617740f17348f4750fcd1280a5b2b867421ab9f47e1103830a87a12",
+      "seqno": 25559429
+    },
+    "service": {
+      "entropy": "5+INAREZXuQu7zpzLWJzdbbQ",
+      "hostname": "williamhorning.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.8"
+  },
+  "ctime": 1710652559,
+  "expire_in": 504576000,
+  "prev": "66ef954184eb60cfaf1346163f5dce47a1ce50e12a360b3e3fe8698b67a4422c",
+  "seqno": 36,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgbECC8nycQqGeA5DSMez6y4HlkMLoaFVp6LOL0lnLiUMKp3BheWxvYWTESpcCJMQgZu+VQYTrYM+vE0YWP13OR6HOUOEqNgs+P+hpi2ekQizEIG6abGN/cI86AnasRpPPrn5VTpdNi4KLAOWdP5h8uQOiAgHCo3NpZ8RAlupB445vW5yL+xVl/YzCgFnPf2UoFJz2HCuL68LH81ARDV1Cbt+zp/cNQCHtNhbiFFwa23uXDsFRs+9otiiJDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIALoL/RyJ/Lqpx7RoWfg+4HsOFsbFbA3cHabwtSIAm3no3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/williamhorning
+
+==================================================================
