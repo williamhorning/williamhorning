@@ -1,4 +1,18 @@
-# changelog
+# lightning changelog
+
+## 0.6.0
+
+// TODO: write changelog
+
+# bolt changelog
+
+## 0.5.8
+
+- fix embed issues
+
+## 0.5.7
+
+- try fixing stuff
 
 ## 0.5.6
 

@@ -1,20 +1,20 @@
-## Introduction
+# Introduction
 
 Bolt is a cross-platform chatbot operated by William Horning and Isaac McFadyen.
 This document, containing the Privacy Policy and Terms of Service for Bolt, is a
 legal agreement between you, William Horning, and Isaac McFadyen.
 
-## Definitions
+# Definitions
 
 We / Us / Our - William Horning and Isaac McFadyen  
 You - the user of Bolt  
 Bolt - Hosted version of
-[williamhorning/bolt](https://github.com/williamhirning/bolt) provided by us  
+[lightning](https://github.com/williamhirning/bolt) provided by us  
 Third-party Chat Platforms - Discord, Guilded, and Revolt
 
-## Terms of Service
+# Terms of Service
 
-### Service Provider
+## Service Provider
 
 Bolt operates under the laws of the following jurisdictions and is solely
 provided by us:
@@ -25,12 +25,12 @@ provided by us:
 The laws of Toronto supersede the laws of any other jurisdiction for the
 operation of Bolt.
 
-### Age Requirements
+## Age Requirements
 
 You must be at least 13 years old, or the age of majority in your jurisdiction,
 to use Bolt. If you are under 13, you are not permitted to use Bolt.
 
-### Warranty & Liability Disclaimer
+## Warranty & Liability Disclaimer
 
 While we may provide support and try to fix bugs and keep Bolt operating, we do
 not offer warranties with Bolt.
@@ -48,9 +48,9 @@ proxied through Bolt (messages, videos, images, et cetera). If you are in the
 United States of America, you waive your right to file a class action lawsuit
 against us.
 
-## Privacy Policy
+# Privacy Policy
 
-### Information we collect
+## Information we collect
 
 To provide Bolt, we need to collect information about you. The amount of
 information we collect may include the following:
@@ -64,14 +64,14 @@ information we collect may include the following:
 - User Activity
 - Your IP address
 
-### Data storage
+## Data storage
 
 Bolt stores data on an Oracle VM in Toronto, Canada. We do not provide third
 parties access to this data, except Oracle, Inc., who may access this data to
 support us in operating Bolt. We backup encrypted copies of our data to
 Microsoft Onedrive.
 
-### Data protection practices
+## Data protection practices
 
 We try to protect your information as best as we can. We do not share your
 information with third parties unless needed to provide Bolt. If you allow us to
@@ -81,12 +81,12 @@ minor, we will delete that information immediately and to the extent possible.
 If we are made aware of unauthorized sharing of your information, we will notify
 you immediately and try to take action against those responsible.
 
-### Requesting your data
+## Requesting your data
 
 If you want a copy of your data, your data deleted, or to ask questions about
 the data used by Bolt, please email bolt-data@williamhorning.dev.
 
-## Government Agencies and Law Enforcement
+# Government Agencies and Law Enforcement
 
 Government Agencies and Law enforcement agencies may request that we share
 information with them, and we want to balance user privacy and government
