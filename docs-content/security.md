@@ -1,15 +1,15 @@
 # security policy
 
-thanks for taking the time to look into the security of bolt! we appriciate
+thanks for taking the time to look into the security of bolt or lightning! we appriciate
 you for looking into that, so here's how to report any security issues:
 
 ## supported versions
 
-| version | supported |
-| ------- | --------- |
-| >= 0.5  | ✓         |
-| 0.4.x   | patches   |
-| <=0.3.1 | X         |
+| version  | supported |
+| -------- | --------- |
+| >= 0.5   | ✓         |
+| 0.4.13   | patches   |
+| <=0.4.13 | X         |
 
 ## how to report security issues
 
@@ -20,7 +20,7 @@ much information as possible and we'll try to fix those as quickly as possible
 
 ### things not to do:
 
-- exploiting vulnerabilities in versions of bolt you dont host
+- exploiting vulnerabilities in versions of lightning you dont host w/o consent from those hosting it
 - revealing the issue before it's been patched
 - attack physical things
 

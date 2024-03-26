@@ -46,8 +46,6 @@ joins a bridge with the name given
 
 ### bridge reset --bridge [name]
 
-_introduced in 0.5.0_
-
 resets this channels bridge with the name provided or the current bridges name
 
 ### bridge leave
