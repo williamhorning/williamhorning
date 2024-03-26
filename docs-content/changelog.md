@@ -2,7 +2,13 @@
 
 ## 0.6.0
 
-// TODO: write changelog
+- move to JSR dependencies
+- move to r2d2 from deno_redis and use redis json (fix #57)
+- redo a lot of the core to move stuff (fix #38)
+- clean up and document public api
+- change stuff to lightning from bolt
+- redo plugin config
+- publish to JSR
 
 # bolt changelog
 
