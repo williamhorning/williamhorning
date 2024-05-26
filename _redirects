@@ -1,5 +1,0 @@
-/go/pyware-surface https://drive.google.com/uc?export=download&id=1tq7fgToT-Xv7DlNXURAMfh7jBsXj_w-9
-/go/treatyoftwobridges https://docs.google.com/document/d/1boCdDKNvDJPnfJuTmSr1zckj17EDZ0_-c6A10fd7dZ8/view
-/go/krameria-laws https://williamhorning.notion.site/Bills-1574dc1fc30349cb83ae18ab212d3047
-/go/bolt https://github.com/williamhorning/bolt
-/bolt/x/:package/:version/* https://raw.githubusercontent.com/williamhorning/bolt/:version/packages/:package/:splat
