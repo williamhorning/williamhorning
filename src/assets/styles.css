@@ -1,13 +1,14 @@
 @import url("https://rsms.me/inter/inter.css");
 
 html {
+  color-scheme: light dark;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #0d1117;
-  color: white;
+  background-color: light-dark(white, #0d1117);
+  color: light-dark(#0d1117, white);
   display: flex;
   flex-direction: column;
   font-family: Inter;
@@ -33,7 +34,7 @@ main {
 
 a:link,
 a:visited {
-  color: #ff9c9c;
+  color: light-dark(#8B1F1F, #ff9c9c);
   text-decoration: none;
 }
 
@@ -66,9 +67,15 @@ bar.header {
   gap: 1rem;
   padding-bottom: 0.75rem;
   padding-top: 0.75rem;
+  a img {
+    width: 2.5rem;
+    padding-right: 1rem;
+  }
   a:link,
   a:visited {
-    color: white;
+    color: light-dark(#0d1117, white);
+    display: flex;
+    align-items: center;
   }
   a.current {
     text-decoration: underline;
@@ -76,11 +83,10 @@ bar.header {
 }
 
 @media print {
+  :root {
+    color-scheme: light;
+  }
   bar {
     display: none;
-  }
-  body {
-    background-color: white;
-    color: #0d1117;
   }
 }
