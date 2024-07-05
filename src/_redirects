@@ -3,7 +3,9 @@
 /bolt/invite/discord https://discord.com/api/oauth2/authorize?client_id=946939274434080849&permissions=8&scope=bot
 /bolt/invite/guilded https://www.guilded.gg/b/9fc1c387-fda8-47cd-b5ec-2de50c03cd64
 /bolt/invite/revolt https://app.revolt.chat/bot/01G1Y9M6G254VWBF41W3N5DQY5
+/bolt/invite/telegram https://t.me/boltbridgebot
 /bolt/support/discord https://discord.gg/HEysJsa4VZ
 /bolt/support/guilded https://www.guilded.gg/i/240lgAJ2
 /bolt/support/revolt https://app.revolt.chat/invite/N4XXTjYF
+/bolt/support/telegram https://t.me/boltbridges
 /bolt/x/:package/:version/* https://raw.githubusercontent.com/williamhorning/bolt/:version/packages/:package/:splat
