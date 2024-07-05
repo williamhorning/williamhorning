@@ -64,9 +64,9 @@
             have a list of all the configuration options you can use. here's an
             example config file:
           </p>
-          <pre><code class="lang-ts">import { guilded_plugin } from 'https://williamhorning.dev/bolt/x/bolt-guilded/0.7.0/mod.ts';
-import { revolt_plugin } from 'https://williamhorning.dev/bolt/x/bolt-revolt/0.7.0/mod.ts';
-import type { config } from 'jsr:@jersey/lightning@0.7.0';
+          <pre><code class="lang-ts">import { guilded_plugin } from 'https://williamhorning.dev/bolt/x/bolt-guilded/0.7.1/mod.ts';
+import { revolt_plugin } from 'https://williamhorning.dev/bolt/x/bolt-revolt/0.7.1/mod.ts';
+import type { config } from 'jsr:@jersey/lightning@0.7.1';
 
 export default {
 	cmd_prefix: 'l!',
@@ -94,10 +94,10 @@ export default {
             of the support servers
           </p>
           <ul>
-            <p>supported original versions in 0.7.0</p>
+            <p>supported original versions in 0.7.x</p>
             <li>Five: 0.5.0 - 0.6.2 (mongodb)</li>
             <li>Five: 0.5.0 - 0.6.2 (redis)</li>
-            <li>Seven: &GreaterEqual;0.7.0</li>
+            <li>Seven: &GreaterEqual;0.7.x</li>
             <p>supported original versions in 0.6.2</p>
             <li>Four: &le;0.4.12 (mongodb)</li>
             <li>FourBeta: 0.4.0 - 0.5.0 (mongodb)</li>
@@ -133,7 +133,7 @@ export default {
             </li>
             <li>clone the lightning repo</li>
             <li>
-              switch to a release branch (the latest is <code>0.7.0</code>)
+              switch to a release branch (the latest is <code>0.7.1</code>)
             </li>
             <li>install the lightning cli</li>
             <li>setup a config file</li>
@@ -162,7 +162,7 @@ lightning run</code></pre>
               setup a compose file with the following service:
               <pre><code class="lang-yaml">lightning:
 # use `build: .` instead of the line below when running from source
-image: williamfromnj/bolt:0.7.0
+image: williamfromnj/bolt:0.7.1
 volumes:
 	- ./config:/app/data
 restart: always</code></pre>
