@@ -4,7 +4,7 @@ https://keybase.io/williamhorning
 
 I hereby claim:
 
-  * I am an admin of https://williamhorning.dev
+  * I am an admin of https://williamhorning.eu.org
   * I am williamhorning (https://keybase.io/williamhorning) on keybase.
   * I have a public key ASBsQILyfJxCoZ4DkNIx7PrLgeWQwuhoVWnos4vSWcuJQwo
 
@@ -27,7 +27,7 @@ To do so, I am signing this object:
     },
     "service": {
       "entropy": "5+INAREZXuQu7zpzLWJzdbbQ",
-      "hostname": "williamhorning.dev",
+      "hostname": "williamhorning.eu.org",
       "protocol": "https:"
     },
     "type": "web_service_binding",
