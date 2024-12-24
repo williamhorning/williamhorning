@@ -1,0 +1,6 @@
+bolt/.vitepress/cache
+bolt/.vitepress/dist
+dist
+lightning/.vitepress/cache
+lightning/.vitepress/dist
+node_modules
