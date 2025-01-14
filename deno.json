@@ -1,0 +1,27 @@
+{
+	"imports": {
+		"vitepress": "npm:vitepress@^1.5.0",
+		"vitepress-sidebar": "npm:vitepress-sidebar@^1.30.2"
+	},
+	"tasks": {
+		"build": "env npx vitepress build bolt && env npx vitepress build lightning && rm -rf dist && mkdir dist && cp -r bolt/.vitepress/dist dist/bolt && cp -r lightning/.vitepress/dist dist/lightning && cp -r src/* dist/",
+		"dev:bolt": "deno run -A npm:vitepress dev bolt",
+		"dev:lightning": "deno run -A npm:vitepress dev lightning"
+	},
+	"fmt": {
+		"lineWidth": 80,
+		"proseWrap": "always",
+		"semiColons": true,
+		"useTabs": true,
+		"singleQuote": true
+	},
+	"exclude": [
+		"lightning/.vitepress/cache",
+		"lightning/.vitepress/dist",
+		"bolt/.vitepress/cache",
+		"bolt/.vitepress/dist",
+		"node_modules"
+	],
+	"nodeModulesDir": "auto",
+	"lock": false
+}

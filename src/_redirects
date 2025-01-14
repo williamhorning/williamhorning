@@ -8,4 +8,4 @@
 /bolt/support/guilded https://www.guilded.gg/i/240lgAJ2
 /bolt/support/revolt https://app.revolt.chat/invite/N4XXTjYF
 /bolt/support/telegram https://t.me/boltbridges
-/bolt/x/:package/:version/* https://raw.githubusercontent.com/williamhorning/bolt/:version/packages/:package/:splat
+/lightning/docs /lightning
