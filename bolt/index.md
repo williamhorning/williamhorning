@@ -38,14 +38,14 @@ features:
 
 ### Invite the bot
 
-- [Discord](/invite/discord)
-- [Guilded](/invite/guilded)
-- [Revolt](/invite/revolt)
-- [Telegram](/invite/telegram)
+- [Discord](https://williamhorning.eu.org/bolt/invite/discord)
+- [Guilded](https://williamhorning.eu.org/bolt/invite/guilded)
+- [Revolt](https://williamhorning.eu.org/bolt/invite/revolt)
+- [Telegram](https://williamhorning.eu.org/bolt/invite/telegram)
 
 ### Get support
 
-- [Discord](/support/discord)
-- [Guilded](/support/guilded)
-- [Revolt](/support/revolt)
-- [Telegram](/support/telegram)
+- [Discord](https://williamhorning.eu.org/bolt/support/discord)
+- [Guilded](https://williamhorning.eu.org/bolt/support/guilded)
+- [Revolt](https://williamhorning.eu.org/bolt/support/revolt)
+- [Telegram](https://williamhorning.eu.org/bolt/support/telegram)
