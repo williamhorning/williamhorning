@@ -1,0 +1,60 @@
+---
+import BaseNav from "../components/BaseNav.astro";
+import Base, { type Props, get_full } from "./Base.astro";
+
+export type { Props };
+
+const props = get_full(Astro.props);
+const title = props.title ? `${props.title} - bolt` : "bolt";
+const description = props.description || "documentation for bolt";
+const prose = props.prose;
+---
+
+<Base
+  title={title}
+  description={description}
+  prose={prose}
+  icon="/assets/bolt.svg"
+  max_width="80rem"
+>
+  <BaseNav
+    name="bolt"
+    url="/bolt"
+    docs={true}
+    logo_alt="bolt logo"
+    logo_url="/assets/bolt.svg"
+    links={[
+      ["Users Guide ↗", "/lightning/users"],
+      ["Legal", "/bolt/legal"],
+    ]}
+    slot="header"
+  />
+
+  <slot />
+</Base>
+
+<style is:global>
+  :root {
+    --background-color: black !important;
+    --background-overlay: #000000bc !important;
+    --callout-color: #202127 !important;
+    --callout-text: #98989f !important;
+    --highlight-color: #5c975e !important;
+    --hover-color: #487c7e !important;
+    --text-color: white !important;
+    --border-radius: 15px !important;
+    --border-radius-large: 25px !important;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  bar {
+    gap: 2rem;
+  }
+
+  bar > a:nth-child(1) {
+    flex-grow: 1;
+  }
+</style>
