@@ -2,7 +2,6 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import starlight from "@astrojs/starlight";
-import fs from "node:fs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -98,53 +97,6 @@ export default defineConfig({
       ],
     }),
     mdx(),
-    {
-      name: "removeSitemap",
-      hooks: {
-        "astro:build:done"() {
-          fs.rmSync("./dist/sitemap-0.xml");
-          fs.rmSync("./dist/sitemap-index.xml");
-
-          const files = fs.readdirSync("./dist/lightning");
-
-          for (const file of files) {
-            const path = `./dist/lightning/${file}`;
-            const { isFile } = fs.statSync(path);
-
-            if (isFile()) {
-              const text = fs.readFileSync(path, { encoding: "utf-8" });
-
-              fs.writeFileSync(
-                path,
-                text.replace(
-                  '<link rel="sitemap" href="/sitemap-index.xml"/>',
-                  ""
-                )
-              );
-            } else {
-              const subfiles = fs.readdirSync(path);
-
-              for (const file2 of subfiles) {
-                const path2 = `${path}/${file2}`;
-                const { isFile } = fs.statSync(path2);
-
-                if (isFile()) {
-                  const text = fs.readFileSync(path2, { encoding: "utf-8" });
-
-                  fs.writeFileSync(
-                    path2,
-                    text.replace(
-                      '<link rel="sitemap" href="/sitemap-index.xml"/>',
-                      ""
-                    )
-                  );
-                }
-              }
-            }
-          }
-        },
-      },
-    },
   ],
   vite: {
     resolve: {
