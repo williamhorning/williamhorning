@@ -1,58 +1,56 @@
 ---
-import BaseNav from "../components/BaseNav.astro";
-import Base, { type Props, get_full } from "./Base.astro";
+import BaseNav from '../components/BaseNav.astro';
+import Base, { type Props, get_full } from './Base.astro';
 
 export type { Props };
 
 const props = get_full(Astro.props);
-const title = props.title ? `${props.title} - lightning` : "lightning";
-const description = props.description || "documentation for lightning";
+const title = props.title ? `${props.title} - lightning` : 'lightning';
+const description = props.description || 'documentation for lightning';
 const prose = props.prose;
 ---
 
 <Base
-  title={title}
-  description={description}
-  prose={prose}
-  icon="/assets/lightning/logo_monocolor_dark.svg"
-  max_width="80rem"
+	title={title}
+	description={description}
+	prose={prose}
+	icon="/assets/lightning/logo_monocolor_dark.svg"
+	max_width="80rem"
 >
-  <BaseNav
-    name="lightning"
-    url="/lightning"
-    docs={true}
-    logo_alt="lightning logo"
-    logo_url="/assets/lightning/logo_monocolor_light.svg"
-    links={[
-      ["Docs", "/lightning/about"],
-    ]}
-    slot="header"
-  />
-  <slot />
+	<BaseNav
+		name="lightning"
+		url="/lightning"
+		docs={true}
+		logo_alt="lightning logo"
+		logo_url="/assets/lightning/logo_monocolor_light.svg"
+		links={[['Docs', '/lightning/about']]}
+		slot="header"
+	/>
+	<slot />
 </Base>
 
 <style is:global>
-  :root {
-    --background-color: black !important;
-    --background-overlay: #000000bc !important;
-    --callout-color: #202127 !important;
-    --callout-text: #98989f !important;
-    --highlight-color: #5c975e !important;
-    --hover-color: #487c7e !important;
-    --text-color: white !important;
-    --border-radius: 15px !important;
-    --border-radius-large: 25px !important;
-  }
+	:root {
+		--background-color: black !important;
+		--background-overlay: #000000bc !important;
+		--callout-color: #202127 !important;
+		--callout-text: #98989f !important;
+		--highlight-color: #5c975e !important;
+		--hover-color: #487c7e !important;
+		--text-color: white !important;
+		--border-radius: 15px !important;
+		--border-radius-large: 25px !important;
+	}
 
-  main {
-    margin: 0 auto;
-  }
+	main {
+		margin: 0 auto;
+	}
 
-  bar {
-    gap: 2rem;
-  }
+	bar {
+		gap: 2rem;
+	}
 
-  bar > a:nth-child(1) {
-    flex-grow: 1;
-  }
+	bar > a:nth-child(1) {
+		flex-grow: 1;
+	}
 </style>

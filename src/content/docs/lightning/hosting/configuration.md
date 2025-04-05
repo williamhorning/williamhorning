@@ -14,8 +14,8 @@ configure the bot and plugins in the same place.
 
 ```ts
 import type { config } from 'jsr:@jersey/lightning@0.8.0';
-import { discord_plugin } from 'jsr:@jersey/lightning-plugin-discord@0.8.0'; 
-import { guilded_plugin } from 'jsr:@jersey/lightning-plugin-guilded@0.8.0'; 
+import { discord_plugin } from 'jsr:@jersey/lightning-plugin-discord@0.8.0';
+import { guilded_plugin } from 'jsr:@jersey/lightning-plugin-guilded@0.8.0';
 
 export default {
 	prefix: '!',
@@ -29,20 +29,20 @@ export default {
 			host_type: 'tcp',
 		},
 	},
-	plugins: [ 
-		discord_plugin.new({ 
-			token: 'your_token', 
-			application_id: 'your_application_id', 
-			slash_commands: true, 
-		}), 
-	], 
+	plugins: [
+		discord_plugin.new({
+			token: 'your_token',
+			application_id: 'your_application_id',
+			slash_commands: true,
+		}),
+	],
 } as config;
 ```
 
 ## Properties
 
 | name      | type                       | notes                                        |
-|-----------|----------------------------|----------------------------------------------|
+| --------- | -------------------------- | -------------------------------------------- |
 | error_url | `string?`                  | Discord-compatible webhook for error logging |
 | database  | `database_config`          | See [_configuring a database_](../database)  |
 | plugins   | `create_plugin&lt;any>[]?` | See [_plugins_](../plugins)                  |

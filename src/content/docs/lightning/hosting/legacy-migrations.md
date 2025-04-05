@@ -58,6 +58,6 @@ migrate to 0.8.0, read the section _Automatic Migrations_.
 
 ## Automatic Migrations
 
-In 0.8.0 (the most recent release as of writing), migrations from 0.7.4 will be 
-handled automatically. This means that as long as you use the Redis option for 
+In 0.8.0 (the most recent release as of writing), migrations from 0.7.4 will be
+handled automatically. This means that as long as you use the Redis option for
 the database, your data will be moved over automatically.

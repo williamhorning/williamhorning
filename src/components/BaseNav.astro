@@ -2,12 +2,12 @@
 import Links from './Links.astro';
 
 interface Props {
-  name: string;
-  url: string;
-  docs: boolean;
-  logo_alt: string;
-  logo_url: string;
-  links: string[][]
+	name: string;
+	url: string;
+	docs: boolean;
+	logo_alt: string;
+	logo_url: string;
+	links: string[][];
 }
 
 const {name, url, logo_alt, logo_url, docs, links} = Astro.props;
@@ -15,82 +15,73 @@ const logo_style = Astro.props.docs ? 'flex-grow: 1' : '';
 ---
 
 <bar>
-  <a href={url} style={logo_style}>
-    <img src={logo_url} alt={logo_alt} /> {name}
-  </a>
-  <Links links={links} />
+	<a href={url} style={logo_style}>
+		<img src={logo_url} alt={logo_alt} />
+		{name}
+	</a>
+	<Links links={links} />
 </bar>
 
-{ docs && <style>
-  bar {
-    a {
-      font-size: 1rem;
-    }
-    a:has(>img) {
-      font-size: 1.5rem;
-    }
-  }
-</style> }
+{ docs && <style>bar { a { font-size: 1rem; } a:has(>img) { font-size: 1.5rem; } }</style> }
 
 <style>
-  bar {
-    position: sticky;
-    z-index: 1000;
-    top: 0;
-    background-color: var(--background-overlay);
-    backdrop-filter: blur(2rem);
-    align-items: center;
-    display: flex;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1.2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    gap: 1rem;
-    a img {
-      width: 3.5rem;
-      height: 3.5rem;
-      padding-right: 1rem;
-    }
-    a:link,
-    a:visited {
-      color: var(--text-color);
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  }
+	bar {
+		position: sticky;
+		z-index: 1000;
+		top: 0;
+		background-color: var(--background-overlay);
+		backdrop-filter: blur(2rem);
+		align-items: center;
+		display: flex;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		font-size: 1.2rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		gap: 1rem;
+		a img {
+			width: 3.5rem;
+			height: 3.5rem;
+			padding-right: 1rem;
+		}
+		a:link,
+		a:visited {
+			color: var(--text-color);
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
 
-  @media (max-width: 768px) {
-    bar {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+	@media (max-width: 768px) {
+		bar {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			padding-bottom: 1rem;
+			padding-top: 1rem;
 
-      a img {
-        width: 2.5rem;
-        padding-right: 0.5rem;
-      }
-    }
-  }
+			a img {
+				width: 2.5rem;
+				padding-right: 0.5rem;
+			}
+		}
+	}
 
-  @media (max-width: 480px) {
-    bar {
-      font-size: 1rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      padding-bottom: 0.5rem;
-      padding-top: 0.5rem;
+	@media (max-width: 480px) {
+		bar {
+			font-size: 1rem;
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+			padding-bottom: 0.5rem;
+			padding-top: 0.5rem;
 
-      a img {
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-  }
+			a img {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
 </style>
- 

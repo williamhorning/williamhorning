@@ -1,298 +1,314 @@
 ---
-import BaseNav from "../components/BaseNav.astro";
+import BaseNav from '../components/BaseNav.astro';
 
 export interface BaseProps {
-  title?: string;
-  description?: string;
-  icon?: string;
-  prose?: boolean;
-  max_width?: string | false;
+	title?: string;
+	description?: string;
+	icon?: string;
+	prose?: boolean;
+	max_width?: string | false;
 }
 
 export type Props = BaseProps & {
-  frontmatter?: BaseProps;
+	frontmatter?: BaseProps;
 };
 
 export function get_full(props: typeof Astro.props): BaseProps {
-  return props.frontmatter ? props.frontmatter : props;
+	return props.frontmatter ? props.frontmatter : props;
 }
 
 const props = get_full(Astro.props);
-const title = props.title ? `${props.title} - jersey` : "jersey";
+const title = props.title ? `${props.title} - jersey` : 'jersey';
 const description = props.description || "jersey's corner of the internet";
-const icon = props.icon || "/assets/logo.svg";
+const icon = props.icon || '/assets/logo.svg';
 const path = `https://williamhorning.eu.org${Astro.url.pathname}`;
 const prose = props.prose;
 const maxwidth =
-  props.max_width === false
-    ? ""
-    : props.max_width
-      ? `max-width: ${props.max_width};`
-      : props.prose
-        ? `max-width: 52rem`
-        : `max-width: 1200px`;
+	props.max_width === false
+		? ''
+		: props.max_width
+			? `max-width: ${props.max_width};`
+			: props.prose
+				? `max-width: 52rem`
+				: `max-width: 1200px`;
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="canonical" href={path} />
-    <link rel="icon" href={icon} />
-    <link rel="stylesheet" href="/assets/inter/inter.css" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-  </head>
-  <body>
-    <slot name="header">
-      <BaseNav
-        name="jersey"
-        url="/"
-        docs={false}
-        logo_alt="jersey's logo"
-        logo_url="/assets/logo.svg"
-        links={[
-          ["bolt", "/bolt"],
-          ["lightning", "/lightning"],
-        ]}
-      />
-    </slot>
-    {
-      prose ? (
-        <main class="prose" style={maxwidth}>
-          <slot />
-        </main>
-      ) : (
-        <main style={maxwidth}>
-          <slot />
-        </main>
-      )
-    }
-    <footer>
-      <div>
-        <a href="/">
-          <img src="/assets/footer/logobw.svg" loading="lazy" alt="william horning" />
-        </a>
-        <img src="/assets/footer/pride.svg" loading="lazy" alt="LGBTQ+ pride flag" />
-        <img src="/assets/footer/gay.svg" loading="lazy" alt="gay men pride flag" />
-        <a href="https://github.com/williamhorning">
-          <img src="/assets/footer/github.svg" loading="lazy" alt="github" />
-        </a>
-        <a href="https://jsr.io/@jersey">
-          <img src="/assets/footer/jsr.svg" loading="lazy" alt="jsr" />
-        </a>
-        <a href="https://discord.gg/K2nBQa9zv4">
-          <img src="/assets/footer/discord.svg" loading="lazy" alt="discord" />
-        </a>
-        <a href="https://www.guilded.gg/i/k3yx810E">
-          <img src="/assets/footer/guilded.svg" loading="lazy" alt="guilded" />
-        </a>
-        <a href="https://app.revolt.chat/invite/N4XXTjYF">
-          <img src="/assets/footer/revolt.svg" loading="lazy" alt="revolt" />
-        </a>
-        <a href="https://t.me/williamhorning">
-          <img src="/assets/footer/telegram.svg" loading="lazy" alt="telegram" />
-        </a>
-      </div>
-      <br />
-      <p>
-        this site doesn't use cookies. all content is available under the MIT
-        license. made with ❤️ by jersey
-      </p>
-    </footer>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="canonical" href={path} />
+		<link rel="icon" href={icon} />
+		<link rel="stylesheet" href="/assets/inter/inter.css" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+	</head>
+	<body>
+		<slot name="header">
+			<BaseNav
+				name="jersey"
+				url="/"
+				docs={false}
+				logo_alt="jersey's logo"
+				logo_url="/assets/logo.svg"
+				links={[
+					['bolt', '/bolt'],
+					['lightning', '/lightning'],
+				]}
+			/>
+		</slot>
+		{
+			prose ? (
+				<main class="prose" style={maxwidth}>
+					<slot />
+				</main>
+			) : (
+				<main style={maxwidth}>
+					<slot />
+				</main>
+			)
+		}
+		<footer>
+			<div>
+				<a href="/">
+					<img
+						src="/assets/footer/logobw.svg"
+						loading="lazy"
+						alt="william horning"
+					/>
+				</a>
+				<img
+					src="/assets/footer/pride.svg"
+					loading="lazy"
+					alt="LGBTQ+ pride flag"
+				/>
+				<img
+					src="/assets/footer/gay.svg"
+					loading="lazy"
+					alt="gay men pride flag"
+				/>
+				<a href="https://github.com/williamhorning">
+					<img src="/assets/footer/github.svg" loading="lazy" alt="github" />
+				</a>
+				<a href="https://jsr.io/@jersey">
+					<img src="/assets/footer/jsr.svg" loading="lazy" alt="jsr" />
+				</a>
+				<a href="https://discord.gg/K2nBQa9zv4">
+					<img src="/assets/footer/discord.svg" loading="lazy" alt="discord" />
+				</a>
+				<a href="https://www.guilded.gg/i/k3yx810E">
+					<img src="/assets/footer/guilded.svg" loading="lazy" alt="guilded" />
+				</a>
+				<a href="https://app.revolt.chat/invite/N4XXTjYF">
+					<img src="/assets/footer/revolt.svg" loading="lazy" alt="revolt" />
+				</a>
+				<a href="https://t.me/williamhorning">
+					<img
+						src="/assets/footer/telegram.svg"
+						loading="lazy"
+						alt="telegram"
+					/>
+				</a>
+			</div>
+			<br />
+			<p>
+				this site doesn't use cookies. all content is available under the MIT
+				license. made with ❤️ by jersey
+			</p>
+		</footer>
+	</body>
 </html>
 
 <style is:global>
-  :root {
-    --background-color: #0d1117;
-    --background-overlay: #0d1117bc;
-    --callout-color: #10151d;
-    --callout-text: white;
-    --highlight-color: #ff9c9c;
-    --hover-color: #ff7070;
-    --text-color: white;
-    --border-radius: 20px;
-    --border-radius-large: 25px;
-  }
+	:root {
+		--background-color: #0d1117;
+		--background-overlay: #0d1117bc;
+		--callout-color: #10151d;
+		--callout-text: white;
+		--highlight-color: #ff9c9c;
+		--hover-color: #ff7070;
+		--text-color: white;
+		--border-radius: 20px;
+		--border-radius-large: 25px;
+	}
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
 
-  html {
-    color-scheme: dark;
-    margin: 0;
-    padding: 0;
-  }
+	html {
+		color-scheme: dark;
+		margin: 0;
+		padding: 0;
+	}
 
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    font-family: InterVariable;
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on,
-      "zero" on,
-      "ordn" on,
-      "salt" on;
-    font-size: 1.25rem;
-    font-weight: 400;
-    leading-trim: both;
-    margin: 0;
-    text-edge: cap;
-    min-height: 100vh;
-  }
+	body {
+		background-color: var(--background-color);
+		color: var(--text-color);
+		display: flex;
+		flex-direction: column;
+		font-family: InterVariable;
+		font-feature-settings:
+			'pnum' on,
+			'lnum' on,
+			'zero' on,
+			'ordn' on,
+			'salt' on;
+		font-size: 1.25rem;
+		font-weight: 400;
+		leading-trim: both;
+		margin: 0;
+		text-edge: cap;
+		min-height: 100vh;
+	}
 
-  main {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
-  }
+	main {
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+		padding-left: 4.5rem;
+		padding-right: 4.5rem;
+	}
 
-  main.prose {
-    display: block;
-    font-size: 0.95rem;
-    line-height: 1.5rem;
+	main.prose {
+		display: block;
+		font-size: 0.95rem;
+		line-height: 1.5rem;
 
-    h1 {
-      font-size: 2rem;
-    }
+		h1 {
+			font-size: 2rem;
+		}
 
-    a {
-      text-decoration: underline;
-    }
+		a {
+			text-decoration: underline;
+		}
 
-    hr {
-      margin-top: 3rem;
-      margin-bottom: 1.5rem;
-      border-width: 0.01rem;
-      border-color: var(--callout-color);
-    }
+		hr {
+			margin-top: 3rem;
+			margin-bottom: 1.5rem;
+			border-width: 0.01rem;
+			border-color: var(--callout-color);
+		}
 
-    blockquote {
-      color: var(--callout-text);
-      margin: 0;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+		blockquote {
+			color: var(--callout-text);
+			margin: 0;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
 
-      em {
-        display: block;
-        border-left-color: var(--callout-color);
-        border-left-width: 0.2rem;
-        border-left-style: solid;
-        padding-left: 2rem;
-      }
-    }
-  }
+			em {
+				display: block;
+				border-left-color: var(--callout-color);
+				border-left-width: 0.2rem;
+				border-left-style: solid;
+				padding-left: 2rem;
+			}
+		}
+	}
 
-  footer {
-    margin-top: 2.25rem;
-    background-color: var(--callout-color);
-    padding: 2rem;
-    font-size: 0.75rem;
+	footer {
+		margin-top: 2.25rem;
+		background-color: var(--callout-color);
+		padding: 2rem;
+		font-size: 0.75rem;
 
-    div {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-items: center;
+		div {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-items: center;
 
-      a {
-        display: flex;
-      }
+			a {
+				display: flex;
+			}
 
-      img,
-      a img {
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-  }
+			img,
+			a img {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
 
-  p {
-    margin: 0;
-  }
+	p {
+		margin: 0;
+	}
 
-  h1 {
-    font-weight: 600;
-    margin-top: 0.5rem;
-  }
+	h1 {
+		font-weight: 600;
+		margin-top: 0.5rem;
+	}
 
-  a {
-    transition:
-      color 0.5s ease,
-      background-color 0.5s ease;
-  }
+	a {
+		transition:
+			color 0.5s ease,
+			background-color 0.5s ease;
+	}
 
-  a:link,
-  a:visited {
-    color: var(--highlight-color);
-    text-decoration: none;
-  }
+	a:link,
+	a:visited {
+		color: var(--highlight-color);
+		text-decoration: none;
+	}
 
-  a:hover {
-    text-decoration: underline;
-  }
+	a:hover {
+		text-decoration: underline;
+	}
 
-  a.underline {
-    text-decoration: underline;
-  }
+	a.underline {
+		text-decoration: underline;
+	}
 
-  a:hover {
-    color: var(--hover-color);
-  }
+	a:hover {
+		color: var(--hover-color);
+	}
 
-  a.btn {
-    color: var(--text-color);
-    background-color: var(--callout-color);
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
-    border-radius: 1.5rem;
-  }
+	a.btn {
+		color: var(--text-color);
+		background-color: var(--callout-color);
+		font-size: 0.9rem;
+		text-align: center;
+		padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+		border-radius: 1.5rem;
+	}
 
-  a.btn:hover {
-    background-color: var(--highlight-color);
-  }
+	a.btn:hover {
+		background-color: var(--highlight-color);
+	}
 
-  a.primary {
-    background-color: var(--hover-color);
-  }
+	a.primary {
+		background-color: var(--hover-color);
+	}
 
-  a.primary:hover {
-    background-color: var(--highlight-color);
-  }
+	a.primary:hover {
+		background-color: var(--highlight-color);
+	}
 
-  @media (max-width: 768px) {
-    body {
-      font-size: 1rem;
-    }
+	@media (max-width: 768px) {
+		body {
+			font-size: 1rem;
+		}
 
-    main {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
+		main {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 
-    h1 {
-      font-size: 1.5rem;
-    }
-  }
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
 
-  @media (max-width: 480px) {
-    body {
-      font-size: 0.875rem;
-    }
+	@media (max-width: 480px) {
+		body {
+			font-size: 0.875rem;
+		}
 
-    h1 {
-      font-size: 1.25rem;
-    }
-  }
+		h1 {
+			font-size: 1.25rem;
+		}
+	}
 </style>

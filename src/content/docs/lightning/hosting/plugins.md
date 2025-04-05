@@ -140,5 +140,5 @@ attachments sent from Telegram to work properly
 
 ## Adding a plugin
 
-To develop a plugin and get it added to this list, please read the 
-[*Developer Docs*](../../developer)
+To develop a plugin and get it added to this list, please read the
+[_Developer Docs_](../../developer)

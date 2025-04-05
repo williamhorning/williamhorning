@@ -1,10 +1,10 @@
 ---
-layout: "../../layouts/Bolt.astro"
+layout: '../../layouts/Bolt.astro'
 ---
 
-import Card from "../../components/Card.astro";
-import Hero from "../../components/Hero.astro";
-import Links from "../../components/Links.astro";
+import Card from '../../components/Card.astro';
+import Hero from '../../components/Hero.astro';
+import Links from '../../components/Links.astro';
 
 <Hero
 	name="bolt"
@@ -12,19 +12,19 @@ import Links from "../../components/Links.astro";
 	image_url="/assets/bolt.svg"
 	image_alt="bolt logo"
 	buttons={[
-	{
-		text: "Users Guide",
-		url: "/lightning/users",
-		primary: true,
-	},
-	{
-		text: "Learn More",
-		url: "/lightning/about",
-	},
-	{
-		text: "View on Github",
-		url: "https://github.com/williamhorning/bolt",
-	},
+		{
+			text: 'Users Guide',
+			url: '/lightning/users',
+			primary: true,
+		},
+		{
+			text: 'Learn More',
+			url: '/lightning/about',
+		},
+		{
+			text: 'View on Github',
+			url: 'https://github.com/williamhorning/bolt',
+		},
 	]}
 />
 
@@ -49,11 +49,11 @@ import Links from "../../components/Links.astro";
 		image_url="/assets/deno.svg"
 		name="Built on open-source technology"
 	>
-		Bolt is built on Lightning, which uses Deno and other open-source
-		technology
+		Bolt is built on Lightning, which uses Deno and other open-source technology
 	</Card>
 </cardgroup>
 
+{/* prettier-ignore */}
 <style>@media (max-width: 768px) \{ cardgroup \{ flex-direction: column; }}</style>
 
 <br />
@@ -61,14 +61,14 @@ import Links from "../../components/Links.astro";
 ## Invite the bot
 
 <Links
-links={[
-	["Discord", "/bolt/invite/discord"],
-	["(support)", "/bolt/support/discord"],
-	["Guilded", "/bolt/invite/guilded"],
-	["(support)", "/bolt/support/guilded"],
-	["Revolt", "/bolt/invite/revolt"],
-	["(support)", "/bolt/support/revolt"],
-	["Telegram", "/bolt/invite/telegram"],
-	["(support)", "/bolt/support/telegram"],
-]}
+	links={[
+		['Discord', '/bolt/invite/discord'],
+		['(support)', '/bolt/support/discord'],
+		['Guilded', '/bolt/invite/guilded'],
+		['(support)', '/bolt/support/guilded'],
+		['Revolt', '/bolt/invite/revolt'],
+		['(support)', '/bolt/support/revolt'],
+		['Telegram', '/bolt/invite/telegram'],
+		['(support)', '/bolt/support/telegram'],
+	]}
 />

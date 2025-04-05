@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Bolt.astro
-title: "legal"
-description: "legalese for bolt"
+title: 'legal'
+description: 'legalese for bolt'
 prose: true
 ---
 

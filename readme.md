@@ -25,4 +25,4 @@ outdated<br /><br />[See the docs ->](https://github.com/williamhorning/deno-out
 
 ### salamander
 
-A *heavily* work-in-progress Wayland compositor
+A _heavily_ work-in-progress Wayland compositor
