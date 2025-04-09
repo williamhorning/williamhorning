@@ -9,8 +9,8 @@ prev:
 
 Hello! Lightning is a chatbot which bridges channels between messaging apps. If
 you've winded up here, you're probably wondering how to setup a bridge. If not,
-you can find a [list of commands](./commands) or list of
-[bridge settings](./settings)
+you can find a [list of commands](./users/commands) or list of
+[bridge settings](./users/settings)
 
 ## Step 1: Invite the bot
 
