@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+const posts = await getCollection('blog');
+---
+
+<ul>
+	{
+		posts.length > 0 ?
+		posts.map((i) => {
+			return (
+				<li>
+					<a href={`/blog/${i.id}`}>
+						<b>{i.data.title}</b>
+						<br />
+						<i>{i.data.description}</i>
+					</a>
+				</li>
+			);
+		}) : <li><i>no posts as of now</i></li>
+	}
+</ul>
+
+<style>
+	ul {
+		margin: 0;
+	}
+</style>
