@@ -8,6 +8,7 @@ const props = get_full(Astro.props);
 const title = props.title ? `${props.title} - lightning` : 'lightning';
 const description = props.description || 'documentation for lightning';
 const prose = props.prose;
+const loading = props.loading;
 ---
 
 <Base
@@ -16,6 +17,7 @@ const prose = props.prose;
 	prose={prose}
 	icon="/assets/lightning/logo_monocolor_dark.svg"
 	max_width="80rem"
+	loading={loading}
 >
 	<BaseNav
 		name="lightning"

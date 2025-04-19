@@ -7,43 +7,42 @@ prev:
 
 # Configuring Lightning
 
-Lightning is configured using a `config.ts`, allowing you to import and
-configure the bot and plugins in the same place.
+Lightning is configured using a `lightning.toml`, file. This file is
+used to configure the Lightning instance, including the database and
+plugins.
 
 ## Example
 
-```ts
-import type { config } from 'jsr:@jersey/lightning@0.8.0';
-import { discord_plugin } from 'jsr:@jersey/lightning-plugin-discord@0.8.0';
-import { guilded_plugin } from 'jsr:@jersey/lightning-plugin-guilded@0.8.0';
+```toml
+prefix = "!"
+error_url = "https://discord.com/api/webhooks/your_webhook_id/your_webhook_token"
 
-export default {
-	prefix: '!',
-	database: {
-		type: 'postgres',
-		config: {
-			user: 'server',
-			database: 'lightning',
-			hostname: 'postgres',
-			port: 5432,
-			host_type: 'tcp',
-		},
-	},
-	plugins: [
-		discord_plugin.new({
-			token: 'your_token',
-			application_id: 'your_application_id',
-			slash_commands: true,
-		}),
-	],
-} as config;
+[database]
+type = 'postgres'
+config = 'postgresql://server@localhost:5432/lightning'
+
+[[plugins]]
+plugin = "jsr:@jersey/lightning-plugin-discord@0.8.0"
+config.token = "your_bot_token"
 ```
 
 ## Properties
 
-| name      | type                       | notes                                        |
-| --------- | -------------------------- | -------------------------------------------- |
-| error_url | `string?`                  | Discord-compatible webhook for error logging |
-| database  | `database_config`          | See [_configuring a database_](../database)  |
-| plugins   | `create_plugin&lt;any>[]?` | See [_plugins_](../plugins)                  |
-| prefix    | `string`                   | The prefix used for commands                 |
+### Prefix
+
+The prefix used for commands. This is optional, and defaults to `!`, but must be a string.
+
+### Error URL
+
+The error URL is a Discord-compatible webhook URL for error logging. This is optional, but
+recommended. If you do not provide a URL, errors will only be logged to the console.
+
+### Database
+
+The database object is used to configure the database used by Lightning. This is
+required, and must be a valid database configuration. See [_configuring a database_](../database)
+
+### Plugins
+
+The plugins array is used to configure the plugins used by Lightning. This is required,
+and should contain at least one plugin. See [_plugins_](../plugins) for more information.

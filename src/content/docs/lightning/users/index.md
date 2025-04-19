@@ -10,7 +10,8 @@ prev:
 Hello! Lightning is a chatbot which bridges channels between messaging apps. If
 you've winded up here, you're probably wondering how to setup a bridge. If not,
 you can find a [list of commands](./users/commands) or list of
-[bridge settings](./users/settings)
+[bridge settings](./users/settings). If you're using 0.7.x, see the
+[0.7.x guide](./seven).
 
 ## Step 1: Invite the bot
 
@@ -27,6 +28,10 @@ the messaging apps where you want to bridge messages.
 :::caution
 Keep your bridge ID a secret! Anyone who has this ID can join your bridge
 :::
+
+Note that `!` may not be the prefix Lightning uses in your server. if you use
+bolt, the prefix is `!bolt`. If you are using a custom prefix, replace `!` with
+your prefix.
 
 In the channel you're trying to bridge, you have to make a bridge. First, you
 would choose a name, and then you would run the `!bridge create [name]` command.

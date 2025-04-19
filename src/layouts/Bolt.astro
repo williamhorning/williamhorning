@@ -8,12 +8,14 @@ const props = get_full(Astro.props);
 const title = props.title ? `${props.title} - bolt` : 'bolt';
 const description = props.description || 'documentation for bolt';
 const prose = props.prose;
+const loading = props.loading;
 ---
 
 <Base
 	title={title}
 	description={description}
 	prose={prose}
+	loading={loading}
 	icon="/assets/bolt.svg"
 	max_width="80rem"
 >

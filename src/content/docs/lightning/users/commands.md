@@ -7,7 +7,9 @@ prev:
 
 # Commands
 
-Note that `!` may not be the prefix Lightning uses in your server
+Note that `!` may not be the prefix Lightning uses in your server. if you use
+bolt, the prefix is `!bolt`. If you are using a custom prefix, replace `!` with
+your prefix.
 
 ## help
 
@@ -71,9 +73,9 @@ Leaves the bridge in the current channel.
 
 ### toggle
 
-| Usage       | `!bridge toggle [setting]`                              |
-| ----------- | ------------------------------------------------------- |
-| `[setting]` | one of `allow_editing`, `allow_everyone`, `use_rawname` |
+| Usage       | `!bridge toggle [setting]` |
+| ----------- | -------------------------- |
+| `[setting]` | one of `allow_everyone`    |
 
 Changes a setting on the bridge. See [_bridge settings_](../settings)
 
