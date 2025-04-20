@@ -67,26 +67,9 @@ export default defineConfig({
 						},
 					],
 				},
+
 				{
-					label: '0.7.0',
-					collapsed: false,
-					items: [
-						{
-							label: 'Start',
-							link: 'lightning/seven'
-						},
-						{
-							label: 'Commands',
-							link: 'lightning/seven/commands'
-						},
-						{
-							label: 'Hosting',
-							link: 'lightning/seven/hosting'
-						}
-					]
-				},
-				{
-					label: '0.8.0 (beta)',
+					label: '0.8.0',
 					collapsed: false,
 					items: [
 						{
@@ -118,6 +101,24 @@ export default defineConfig({
 								{ label: 'Start', slug: 'lightning/developer' },
 								'lightning/developer/security',
 							],
+						},
+					],
+				},
+				{
+					label: '0.7.0',
+					collapsed: false,
+					items: [
+						{
+							label: 'Start',
+							link: 'lightning/seven',
+						},
+						{
+							label: 'Commands',
+							link: 'lightning/seven/commands',
+						},
+						{
+							label: 'Hosting',
+							link: 'lightning/seven/hosting',
 						},
 					],
 				},
