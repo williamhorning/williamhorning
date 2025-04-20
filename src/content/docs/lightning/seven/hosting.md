@@ -4,7 +4,7 @@ title: Hosting 0.7.x
 
 # Hosting 0.7.x
 
-The recomended way to host Lightning 0.7.x is to use Docker and Docker Compose.
+The recommended way to host Lightning 0.7.x is to use Docker and Docker Compose.
 This allows you to use containers and run it more easily using container
 management software.
 

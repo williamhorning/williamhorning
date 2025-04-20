@@ -68,7 +68,7 @@ Joins the bridge with the given ID.
 | ----- | ----------------------------- |
 | `[id]` | the ID of the current bridge |
 
-Leaves the bridge in the current channel if goven an id.
+Leaves the bridge in the current channel if given an id.
 
 ![leaving bridge image](./commands/leave.png)
 

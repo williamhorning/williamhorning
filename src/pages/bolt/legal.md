@@ -81,7 +81,7 @@ information we collect may include the following:
 
 Bolt stores data on hardware in the United States. We do not provide third
 parties access to this data. We backup encrypted copies of our data to Microsoft
-Onedrive.
+OneDrive.
 
 ### Data protection practices
 

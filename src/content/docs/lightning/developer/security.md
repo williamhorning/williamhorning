@@ -23,7 +23,7 @@ Github to report security issues.
 
 ### Things to not do
 
-- Publically disclose vulnerabilities before they are fixed
+- Publicly disclose vulnerabilities before they are fixed
 - Exploiting instances of Lightning you don't host
 - Targeting physical infrastructure
 

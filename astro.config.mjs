@@ -42,7 +42,7 @@ export default defineConfig({
 				SiteTitle: './src/components/DocsSiteTitle.astro',
 			},
 			social: {
-				github: 'https://github.com/williamhorning/bolt',
+				github: 'https://github.com/williamhorning/lightning',
 			},
 			sidebar: [
 				{
@@ -59,7 +59,7 @@ export default defineConfig({
 						},
 						{
 							label: 'Github Repo',
-							link: 'https://github.com/williamhorning/bolt',
+							link: 'https://github.com/williamhorning/lightning',
 						},
 						{
 							label: 'William Horning',
