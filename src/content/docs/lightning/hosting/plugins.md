@@ -25,7 +25,7 @@ type = "postgres"
 config = "postgresql://server@localhost:5432/lightning"
 
 [[plugins]]
-plugin = "jsr:@lightning/discord@0.8.0"
+plugin = "jsr:@lightning/discord@0.8.0-alpha.1"
 config.token = "your_bot_token"
 ```
 
@@ -47,7 +47,7 @@ config.port = 6379
 config.transport = "tcp"
 
 [[plugins]]
-plugin = "jsr:@lightning/guilded@0.8.0"
+plugin = "jsr:@lightning/guilded@0.8.0-alpha.1"
 config.token = "your_bot_token"
 ```
 
@@ -67,7 +67,7 @@ type = "postgres"
 config = "postgresql://server@localhost:5432/lightning"
 
 [[plugins]]
-plugin = "jsr:@lightning/revolt@0.8.0"
+plugin = "jsr:@lightning/revolt@0.8.0-alpha.1"
 config.token = "your_bot_token"
 config.user_id = "your_bot_user_id"
 ```

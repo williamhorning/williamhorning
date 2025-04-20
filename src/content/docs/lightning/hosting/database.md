@@ -10,9 +10,8 @@ being offered as options.
 ## Redis
 
 Redis can be used on its own with Lightning using the following database config.
-You can configure how Lightning connects to Redis by passing a
-[Deno.ConnectOptions](https://docs.deno.com/api/deno/~/Deno.ConnectOptions)
-object
+You can configure how Lightning connects to Redis by passing an object with a
+hostname and port property.
 
 ```toml {3-7}
 prefix = "!"
@@ -20,11 +19,10 @@ prefix = "!"
 [database]
 type = 'redis'
 config.hostname = 'localhost'
-config.transport = 'tcp'
 config.port = 6379
 
 [[plugins]]
-plugin = "jsr:@lightning/guilded@0.8.0"
+plugin = "jsr:@lightning/guilded@0.8.0-alpha.1"
 config.token = "your_bot_token"
 ```
 
@@ -42,6 +40,6 @@ type = "postgres"
 config = "postgresql://server@localhost:5432/lightning"
 
 [[plugins]]
-plugin = "jsr:@lightning/discord@0.8.0"
+plugin = "jsr:@lightning/discord@0.8.0-alpha.1"
 config.token = "your_bot_token"
 ```
