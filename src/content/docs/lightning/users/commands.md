@@ -64,12 +64,13 @@ Joins the bridge with the given ID.
 
 ### leave
 
-| Usage | `!bridge leave` |
-| ----- | --------------- |
+| Usage | `!bridge leave [id]`          |
+| ----- | ----------------------------- |
+| `[id]` | the ID of the current bridge |
 
-Leaves the bridge in the current channel.
+Leaves the bridge in the current channel if goven an id.
 
-![leaving bridge image](./commands/join.png)
+![leaving bridge image](./commands/leave.png)
 
 ### toggle
 
