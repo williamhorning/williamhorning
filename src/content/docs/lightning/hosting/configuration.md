@@ -32,7 +32,7 @@ config.token = "your_bot_token"
 
 The prefix used for commands. This is optional, and defaults to `!`, but must be a string.
 
-### Error URL
+### Error URL (optional)
 
 The error URL is a Discord-compatible webhook URL for error logging. This is optional, but
 recommended. If you do not provide a URL, errors will only be logged to the console.
