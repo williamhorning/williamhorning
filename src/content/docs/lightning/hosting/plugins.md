@@ -12,8 +12,8 @@ support. There are a number of existing plugins which are available:
 
 [![JSR](https://jsr.io/badges/@lightning/discord)](https://jsr.io/@lightning/discord)
 
-@lightning/discord adds support for Discord to Lightning. To use it,
-you'll first need to create a Discord bot at the
+@lightning/discord adds support for Discord to Lightning. To use it, you'll
+first need to create a Discord bot at the
 [Discord Developer Portal](https://discord.com/developers/applications). After
 you do that, you will need to add the following to your config file:
 
@@ -25,7 +25,7 @@ type = "postgres"
 config = "postgresql://server@localhost:5432/lightning"
 
 [[plugins]]
-plugin = "jsr:@lightning/discord@0.8.0-alpha.2"
+plugin = "jsr:@lightning/discord@0.8.0-alpha.5"
 config.token = "your_bot_token"
 ```
 
@@ -33,8 +33,8 @@ config.token = "your_bot_token"
 
 [![JSR](https://jsr.io/badges/@lightning/guilded)](https://jsr.io/@lightning/guilded)
 
-@lightning/guilded adds support for Guilded. To use it, you'll first need
-to create a Guilded bot. After you do that, you'll need to add the following to
+@lightning/guilded adds support for Guilded. To use it, you'll first need to
+create a Guilded bot. After you do that, you'll need to add the following to
 your config file:
 
 ```toml {9-11}
@@ -47,7 +47,7 @@ config.port = 6379
 config.transport = "tcp"
 
 [[plugins]]
-plugin = "jsr:@lightning/guilded@0.8.0-alpha.2"
+plugin = "jsr:@lightning/guilded@0.8.0-alpha.5"
 config.token = "your_bot_token"
 ```
 
@@ -55,9 +55,9 @@ config.token = "your_bot_token"
 
 [![JSR](https://jsr.io/badges/@lightning/revolt)](https://jsr.io/@lightning/revolt)
 
-@lightning/telegram adds support for Telegram. To use it, you'll need to
-create a Revolt bot first. After that, you need to add the following to your
-config file:
+@lightning/telegram adds support for Telegram. To use it, you'll need to create
+a Revolt bot first. After that, you need to add the following to your config
+file:
 
 ```toml {7-10}
 prefix = "!bolt "
@@ -67,7 +67,7 @@ type = "postgres"
 config = "postgresql://server@localhost:5432/lightning"
 
 [[plugins]]
-plugin = "jsr:@lightning/revolt@0.8.0-alpha.2"
+plugin = "jsr:@lightning/revolt@0.8.0-alpha.5"
 config.token = "your_bot_token"
 config.user_id = "your_bot_user_id"
 ```
@@ -76,9 +76,9 @@ config.user_id = "your_bot_user_id"
 
 [![JSR](https://jsr.io/badges/@lightning/telegram)](https://jsr.io/@lightning/telegram)
 
-@lightning/telegram adds support for Telegram. Before using it, you'll
-need to talk with @BotFather to create a bot. After that, you need to add the
-following to your config:
+@lightning/telegram adds support for Telegram. Before using it, you'll need to
+talk with @BotFather to create a bot. After that, you need to add the following
+to your config:
 
 ```toml {9-13}
 prefix = "l!"

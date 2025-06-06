@@ -11,8 +11,7 @@ Thanks for looking at the security of Lightning! If you've found issues with
 Lightning in a supported version, please email
 `william (underscore) horning (at) outlook (dot) com`.
 
-Please _**DO NOT**_ use
-Github to report security issues.
+Please _**DO NOT**_ use Github to report security issues.
 
 ### What to include in a report
 

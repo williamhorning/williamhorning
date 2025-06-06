@@ -18,8 +18,8 @@ you can find a [list of commands](./users/commands) or list of
 To use the bot, you have to invite it to your server. If you're using a version
 of the bot hosted by someone, use the invite links provided by them. If you
 don't have someone hosting the bot for you, you might want to take a look at
-[bolt](/bolt). You have to invite the bot to all of
-the messaging apps where you want to bridge messages.
+[bolt](/bolt). You have to invite the bot to all of the messaging apps where you
+want to bridge messages.
 
 ![invite image](./guide/invite.png)
 

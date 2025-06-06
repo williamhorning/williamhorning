@@ -54,7 +54,7 @@ Leaves the bridge in the current channel.
 | ----------- | ------------------------------------- |
 | `[setting]` | one of `use_rawname`, `allow_editing` |
 
-Changes a setting on the bridge. 
+Changes a setting on the bridge.
 
 ### status
 

@@ -1,0 +1,63 @@
+bar {
+	position: sticky;
+	z-index: 1000;
+	top: 0;
+	background-color: var(--background-overlay);
+	backdrop-filter: blur(2rem);
+	align-items: center;
+	display: flex;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 1.2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: 1.2rem;
+
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: var(--text-color) !important;
+		font-size: 1rem;
+	}
+
+	a:link,
+	a:visited {
+		color: var(--text-color) !important;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a:has(> img) {
+		font-size: 1.5rem;
+	}
+
+	a img {
+		width: 3.5rem;
+		height: 3.5rem;
+		padding-right: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		padding: 1rem;
+		gap: 1.5rem !important;
+
+		a img {
+			width: 2.5rem;
+			padding-right: 0.5rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		font-size: 1rem;
+		padding: 0.5rem;
+		gap: 1rem !important;
+
+		a img {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
+}

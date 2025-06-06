@@ -24,7 +24,6 @@ const { image_alt, image_url, name } = Astro.props;
 		overflow: hidden;
 		padding: 1.75rem;
 		font-size: 1rem;
-
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
@@ -37,6 +36,29 @@ const { image_alt, image_url, name } = Astro.props;
 			font-size: 0.9rem;
 			color: var(--callout-text);
 			line-height: 1.5rem;
+		}
+	}
+</style>
+
+<style is:global>
+	.cardgroup {
+		display: flex;
+		gap: clamp(1rem, 3vw, 2rem);
+		width: 100%;
+		margin: 0 auto;
+		flex-wrap: wrap;
+
+		& :global(article) {
+			flex: 1 1 300px;
+			min-width: 250px;
+		}
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 1rem;
+
+			& :global(article) {
+				width: 100%;
+			}
 		}
 	}
 </style>

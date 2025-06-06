@@ -1,6 +1,7 @@
 ---
 layout: '../../layouts/Bolt.astro'
-loading: 'eager'
+loading: 'lazy'
+max_width: false
 ---
 
 import Card from '../../components/Card.astro';
@@ -8,28 +9,29 @@ import Hero from '../../components/Hero.astro';
 import Links from '../../components/Links.astro';
 
 <Hero
-	name="bolt"
-	tagline="a chatbot"
+	name="connect your community with"
+	tagline="bolt"
+	use_inline={true}
 	image_url="/assets/bolt.svg"
 	image_alt="bolt logo"
 	buttons={[
 		{
-			text: 'Users Guide',
+			text: 'Users Guide ->',
 			url: '/lightning/users',
 			primary: true,
 		},
 		{
-			text: 'Learn More',
+			text: 'Learn More ->',
 			url: '/lightning/about',
 		},
 		{
-			text: 'View on Github',
+			text: 'Github ↗',
 			url: 'https://github.com/williamhorning/lightning',
 		},
 	]}
 />
 
-<cardgroup style="display: flex; gap: 1rem;">
+<div class="cardgroup">
 	<Card
 		image_alt="community"
 		image_url="/assets/community.svg"
@@ -52,10 +54,7 @@ import Links from '../../components/Links.astro';
 	>
 		Bolt is built on Lightning, which uses Deno and other open-source technology
 	</Card>
-</cardgroup>
-
-{/* prettier-ignore */}
-<style>@media (max-width: 768px) \{ cardgroup \{ flex-direction: column; }}</style>
+</div>
 
 <br />
 

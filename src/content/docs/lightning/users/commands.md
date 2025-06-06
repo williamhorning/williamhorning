@@ -62,10 +62,18 @@ Joins the bridge with the given ID.
 
 ![joining bridge image](./commands/join.png)
 
+### subscribe
+
+| Usage  | `!bridge subscribe [id]` |
+| ------ | ------------------------ |
+| `[ID]` | an id of a bridge        |
+
+Subscribes to the bridge with the given ID.
+
 ### leave
 
-| Usage | `!bridge leave [id]`          |
-| ----- | ----------------------------- |
+| Usage  | `!bridge leave [id]`         |
+| ------ | ---------------------------- |
 | `[id]` | the ID of the current bridge |
 
 Leaves the bridge in the current channel if given an id.

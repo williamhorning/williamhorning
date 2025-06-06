@@ -23,7 +23,7 @@ In a `compose.yml` file, add the following snippet:
 
 ```yml
 lightning:
-  image: ghcr.io/williamhorning/lightning:0.8.0
+  image: ghcr.io/williamhorning/lightning:0.8.0-alpha.5
   volumes:
     - ./config:/data
   restart: always

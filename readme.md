@@ -6,15 +6,15 @@ Hey there 👋, I'm Jersey, a student and developer.
 
 ### [bolt](https://williamhorning.eu.org/bolt) - a chatbot
 
-Bolt, the hosted version of Lightning, is a chatbot which connects
-communities by bridging many popular messaging apps—such as Discord,
-Guilded, Revolt, and Telegram. [Invite the bot ->](https://williamhorning.eu.org/bolt)
+Bolt, the hosted version of Lightning, is a chatbot which connects communities
+by bridging many popular messaging apps—such as Discord, Guilded, Revolt, and
+Telegram. [Invite the bot ->](https://williamhorning.eu.org/bolt)
 
 ### [lightning](https://williamhorning.eu.org/lightning) - a chatbot
 
 Lightning is an open-source chatbot which is easy to configure, runs on
-open-source technology such as Deno, and allows you to bridge many
-popular messaging apps. [See the docs ->](https://williamhorning.eu.org/lightning)
+open-source technology such as Deno, and allows you to bridge many popular
+messaging apps. [See the docs ->](https://williamhorning.eu.org/lightning)
 
 ### [rvapi](https://jsr.io/@jersey/rvapi) - a Revolt API library
 

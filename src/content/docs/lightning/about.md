@@ -35,8 +35,8 @@ of choice, gets the same messages, and is on the same page.
 
 Many bridges have existed before the existence of lightning, however, many of
 these solutions have had issues. Some bridges didn't play well with others,
-others didn't handle attachments, others refused to handle embedded media, and it
-was a mess. With lightning, part of the goal was to solve these issues by
+others didn't handle attachments, others refused to handle embedded media, and
+it was a mess. With lightning, part of the goal was to solve these issues by
 bringing many platforms into one tool, having it become the handler of truth.
 
 ## supported platforms

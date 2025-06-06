@@ -3,9 +3,8 @@ import { getCollection } from 'astro:content';
 const posts = await getCollection('blog');
 ---
 
-<ul>
+<ul style="margin: 0;">
 	{
-		posts.length > 0 ?
 		posts.map((i) => {
 			return (
 				<li>
@@ -16,12 +15,6 @@ const posts = await getCollection('blog');
 					</a>
 				</li>
 			);
-		}) : <li><i>no posts as of now</i></li>
+		})
 	}
 </ul>
-
-<style>
-	ul {
-		margin: 0;
-	}
-</style>

@@ -11,7 +11,7 @@ import Links from '../../components/Links.astro';
 	name="lightning"
 	tagline="a chatbot"
 	image_url="/assets/lightning/logo_monocolor_dark.svg"
-	image_alt="bolt logo"
+	image_alt="lightning logo"
 	buttons={[
 		{
 			text: 'Users Guide',
@@ -19,17 +19,17 @@ import Links from '../../components/Links.astro';
 			primary: true,
 		},
 		{
-			text: 'Learn More',
+			text: 'Learn More ->',
 			url: '/lightning/about',
 		},
 		{
-			text: 'View on Github',
+			text: 'View on Github ↗',
 			url: 'https://github.com/williamhorning/lightning',
 		},
 	]}
 />
 
-<cardgroup style="display: flex; gap: 1rem;">
+<div class="cardgroup" style="display: flex; gap: 1rem;">
 	<Card
 		image_alt="community"
 		image_url="/assets/community.svg"
@@ -58,7 +58,4 @@ import Links from '../../components/Links.astro';
 		Lightning uses the flexibility of JavaScript along with the safety provided
 		by TypeScript and Deno
 	</Card>
-</cardgroup>
-
-{/* prettier-ignore */}
-<style>@media (max-width: 768px) \{ cardgroup \{ flex-direction: column; }}</style>
+</div>
