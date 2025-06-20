@@ -7,7 +7,7 @@ next:
 
 # Hosting with Docker
 
-Another way to host Lightning aside from using Deno directly is to use Docker
+Another way to host Lightning aside from using the cli directly is to use Docker
 and Docker Compose. This allows you to use containers and run it more easily
 using container management software.
 
@@ -23,15 +23,14 @@ In a `compose.yml` file, add the following snippet:
 
 ```yml
 lightning:
-  image: ghcr.io/williamhorning/lightning:0.8.0-alpha.5
+  image: ghcr.io/williamhorning/lightning:0.8.0-alpha.6
   volumes:
     - ./config:/data
   restart: always
 ```
 
 Note that you will need to make the config folder adjacent to the composefile
-and place the `lightning.toml` file inside. See
-[_configuration_](../configuration) and [_plugins_](../plugins)
+and place the `lightning.toml` file inside. See [_configuration_](../configuration)
 
 ## Running lightning
 

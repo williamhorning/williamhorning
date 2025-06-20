@@ -69,57 +69,34 @@ export default defineConfig({
 				},
 
 				{
-					label: '0.8.0',
+					label: 'Users Guide',
 					collapsed: false,
 					items: [
-						{
-							label: 'Users Guide',
-							collapsed: false,
-							items: [
-								{ label: 'Start', slug: 'lightning/users' },
-								'lightning/users/commands',
-								'lightning/users/settings',
-							],
-						},
-						{
-							label: 'Hosting',
-							collapsed: false,
-							items: [
-								{ label: 'Start', slug: 'lightning/hosting' },
-								'lightning/hosting/database',
-								'lightning/hosting/plugins',
-								'lightning/hosting/configuration',
-								'lightning/hosting/legacy-migrations',
-								'lightning/hosting/deno',
-								'lightning/hosting/docker',
-							],
-						},
-						{
-							label: 'Developers',
-							collapsed: false,
-							items: [
-								{ label: 'Start', slug: 'lightning/developer' },
-								'lightning/developer/security',
-							],
-						},
+						{ label: 'Start', slug: 'lightning/users' },
+						'lightning/users/commands',
+						'lightning/users/settings',
 					],
 				},
 				{
-					label: '0.7.0',
+					label: 'Hosting',
 					collapsed: false,
 					items: [
+						{ label: 'Start', slug: 'lightning/hosting' },
 						{
-							label: 'Start',
-							link: 'lightning/seven',
+							label: 'Configuring Lightning',
+							link: '/lightning/hosting/configuration',
 						},
-						{
-							label: 'Commands',
-							link: 'lightning/seven/commands',
-						},
-						{
-							label: 'Hosting',
-							link: 'lightning/seven/hosting',
-						},
+						'lightning/hosting/legacy-migrations',
+						'lightning/hosting/go',
+						'lightning/hosting/docker',
+					],
+				},
+				{
+					label: 'Developers',
+					collapsed: false,
+					items: [
+						{ label: 'Start', slug: 'lightning/developer' },
+						'lightning/developer/security',
 					],
 				},
 			],

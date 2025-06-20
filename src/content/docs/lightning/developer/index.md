@@ -4,9 +4,29 @@ title: Developer Docs
 
 # Developer Docs
 
-Lightning is a TypeScript-based chatbot which should make it fairly easy to
-develop for and around. Take a look at the
-[api docs](https://jsr.io/@lightning/lightning/doc) if you want to look at the
-interfaces exposed by lightning. If you want to make a plugin, all you need to
-do is export an implementation of the `plugin` class with the necessary methods
-implemented and a `parse_config` function.
+Lightning is a Go-based chatbot which should make it fairly easy to develop for
+and around. Import the package from `github.com/williamhorning/lightning` if you
+want to look at the interfaces exposed by lightning. If you want to make a
+plugin, look at the template below
+
+```go
+package demo
+
+import (
+	"github.com/williamhorning/lightning"
+)
+
+func init() {
+	lightning.RegisterPluginType("demo", newDemoPlugin)
+}
+
+func newRevoltPlugin(config any) (lightning.Plugin, error) {
+	return &demoPlugin{config}, nil
+}
+
+type demoPlugin struct {
+	config map[string]any
+}
+
+// implement the lightning.Plugin interface...
+```

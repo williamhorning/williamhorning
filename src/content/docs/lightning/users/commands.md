@@ -8,7 +8,7 @@ prev:
 # Commands
 
 Note that `!` may not be the prefix Lightning uses in your server. if you use
-bolt, the prefix is `!bolt`. If you are using a custom prefix, replace `!` with
+bolt, the prefix is `!bolt `. If you are using a custom prefix, replace `!` with
 your prefix.
 
 ## help
@@ -28,15 +28,6 @@ Displays help.
 Displays the time it takes for the bot to respond to you.
 
 ![ping image](./commands/ping.png)
-
-## version
-
-| Usage | `!version` |
-| ----- | ---------- |
-
-Displays the version of Lightning the bot runs.
-
-![version image](./commands/version.png)
 
 ## bridge
 

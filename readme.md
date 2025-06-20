@@ -13,7 +13,7 @@ Telegram. [Invite the bot ->](https://williamhorning.eu.org/bolt)
 ### [lightning](https://williamhorning.eu.org/lightning) - a chatbot
 
 Lightning is an open-source chatbot which is easy to configure, runs on
-open-source technology such as Deno, and allows you to bridge many popular
+open-source technology such as Go, and allows you to bridge many popular
 messaging apps. [See the docs ->](https://williamhorning.eu.org/lightning)
 
 ### [rvapi](https://jsr.io/@jersey/rvapi) - a Revolt API library
