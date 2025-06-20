@@ -150,7 +150,7 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
     // Plugins
     if (data.get('enable_discord')) {
       const token = data.get('discord_token');
-      config.push('[plugins.discord]');
+      config.push('[plugins.bolt-discord]');
       if (token) config.push(`token = "${token}"`);
       else config.push('token = "your_bot_token" # You MUST set this to your Discord bot token');
       config.push('');
@@ -158,7 +158,7 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
     if (data.get('enable_guilded')) {
       const token = data.get('guilded_token');
-      config.push('[plugins.guilded]');
+      config.push('[plugins.bolt-guilded]');
       if (token) config.push(`token = "${token}"`);
       else config.push('token = "your_bot_token" # You MUST set this to your Guilded bot token');
       config.push('');
@@ -166,7 +166,7 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
     if (data.get('enable_revolt')) {
       const token = data.get('revolt_token');
-      config.push('[plugins.revolt]');
+      config.push('[plugins.bolt-revolt]');
       if (token) config.push(`token = "${token}"`);
       else config.push('token = "your_bot_token" # You MUST set this to your Revolt bot token');
       config.push('');
@@ -176,7 +176,7 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
       const token = data.get('telegram_token');
       const port = data.get('telegram_proxy_port');
       const url = data.get('telegram_proxy_url');
-      config.push('[plugins.telegram]');
+      config.push('[plugins.bolt-telegram]');
       if (token) config.push(`token = "${token}"`);
       else config.push('token = "your_bot_token" # You MUST set this to your Telegram bot token');
       if (port) config.push(`proxy_port = ${port}`);
