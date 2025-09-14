@@ -1,0 +1,84 @@
+:root {
+	--sl-color-accent: #487c7e !important;
+	--sl-color-gray-3: #888b96 !important;
+	--sl-color-gray-4: #545861 !important;
+	--sl-color-gray-5: #353841 !important;
+	--sl-color-gray-6: #0d1117 !important;
+	--sl-color-gray-7: #0d1117 !important;
+}
+
+form label {
+	display: block;
+	margin: 0.75rem 0;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+form input[type="text"],
+form input[type="url"],
+form input[type="number"],
+form select {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	font-size: 1rem;
+	font-family: InterVariable;
+	color: var(--sl-color-text);
+	background-color: var(--sl-color-bg-input, var(--sl-color-gray-6));
+	border: 1px solid var(--sl-color-border, var(--sl-color-gray-5));
+	border-radius: var(--sl-radius-m);
+	transition: border-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="url"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+	outline: none;
+	border-color: var(--sl-color-accent);
+	box-shadow: 0 0 0 1px var(--sl-color-accent);
+}
+
+form input:disabled {
+	background-color: var(--sl-color-gray-5);
+	color: var(--sl-color-gray-3);
+	cursor: not-allowed;
+}
+
+form label[for^="enable_"],
+div:has(> input[type="checkbox"]) label {
+	font-weight: bold;
+	margin: 0;
+	cursor: pointer;
+}
+
+form label[for^="enable_"] {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+form input[type="checkbox"] {
+	width: 1.25em;
+	height: 1.25em;
+	accent-color: var(--sl-color-accent);
+	background-color: var(--sl-color-gray-6);
+	margin: 0;
+	cursor: pointer;
+}
+
+div:has(> input[type="checkbox"]) {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+form pre {
+	background-color: var(--sl-color-bg-code, var(--sl-color-gray-7));
+	padding: 1rem;
+	border-radius: var(--sl-radius-m);
+	overflow-x: auto;
+}
