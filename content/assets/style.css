@@ -44,7 +44,6 @@ body {
 	font-size: 1.5rem;
 	font-weight: 300;
 	line-height: 1.5;
-	letter-spacing: -0.02rem;
 	font-feature-settings:
 		"pnum" on,
 		"lnum" on,
@@ -86,6 +85,7 @@ main.bolt .hero h1 {
 }
 
 main.bolt h1:not(:first-of-type) {
+	margin-left: 0.25ch;
 	color: var(--text-normal);
 	background-image: none;
 }
