@@ -84,8 +84,11 @@ main.bolt .hero h1 {
 	color: var(--text-light);
 }
 
+main.bolt h1:is(:first-of-type) {
+	margin-right: 0.25ch;
+}
+
 main.bolt h1:not(:first-of-type) {
-	margin-left: 0.25ch;
 	color: var(--text-normal);
 	background-image: none;
 }
