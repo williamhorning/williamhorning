@@ -25,7 +25,7 @@ agreement between you and William Horning.
 - You - the user of Bolt
 - Bolt - Hosted version of [lightning](../lightning)
 provided by us
-- Third-party Chat Platforms - Discord, Guilded, Revolt, and Telegram
+- Third-party Chat Platforms - Discord, Guilded, Stoat, and Telegram
 
 ---
 

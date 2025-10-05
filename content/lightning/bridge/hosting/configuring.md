@@ -88,17 +88,17 @@ its token.
 <label for="guilded_token">Guilded Bot Token</label>
 <input type="text" id="guilded_token" name="guilded_token" disabled />
 
-### Revolt
+### Stoat
 
-To enable Revolt support for Lightning, you need to enable the plugin and
+To enable Stoat support for Lightning, you need to enable the plugin and
 provide a bot token.
 
 <div>
-  <label for="enable_revolt">Enable Revolt Plugin</label>
-  <input type="checkbox" id="enable_revolt" name="enable_revolt" />
+  <label for="enable_stoat">Enable Stoat Plugin</label>
+  <input type="checkbox" id="enable_stoat" name="enable_stoat" />
 </div>
-<label for="revolt_token">Revolt Bot Token</label>
-<input type="text" id="revolt_token" name="revolt_token" disabled />
+<label for="stoat_token">Stoat Bot Token</label>
+<input type="text" id="stoat_token" name="stoat_token" disabled />
 
 ### Telegram
 

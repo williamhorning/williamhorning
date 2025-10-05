@@ -8,7 +8,7 @@ icon = "lightning.png"
 # plugins for lightning
 
 Lightning is built to be extended by plugins, which add support for different
-platforms, including Discord, Guilded, Revolt, and Telegram, allowing your bot
+platforms, including Discord, Guilded, Stoat, and Telegram, allowing your bot
 to be multi-platform with ease.
 
 ## adding platform plugins
@@ -28,7 +28,7 @@ The following plugins are officially supported by Lightning:
 
 - Discord
 - Guilded
-- Revolt
+- Stoat
 - Telegram
 
 ### discord [![Go Reference](https://pkg.go.dev/badge/github.com/williamhorning/lightning/pkg/platforms/discord.svg)](https://pkg.go.dev/github.com/williamhorning/lightning/pkg/platforms/discord)
@@ -49,10 +49,10 @@ following configuration options:
 
 - `token` (string, required): The bot token to use for authentication
 
-### revolt [![Go Reference](https://pkg.go.dev/badge/github.com/williamhorning/lightning/pkg/platforms/revolt.svg)](https://pkg.go.dev/github.com/williamhorning/lightning/pkg/platforms/revolt)
+### stoat [![Go Reference](https://pkg.go.dev/badge/github.com/williamhorning/lightning/pkg/platforms/stoat.svg)](https://pkg.go.dev/github.com/williamhorning/lightning/pkg/platforms/stoat)
 
-The Revolt plugin allows your bot to connect to Revolt, supporting all the
-features of Lightning. To use the Revolt plugin, you'll need to add import
+The Stoat plugin allows your bot to connect to Stoat, supporting all the
+features of Lightning. To use the Stoat plugin, you'll need to add import
 the plugin, add the plugin type to the framework, and setup the plugin with the
 following configuration options:
 

@@ -13,7 +13,7 @@ icon = "lightning.png"
 
 <span aria-label="button group">
 <a class="primary button" href="/lightning/framework/hello-world">get started -></a>
-<a class="button" href="/go/lightning/godoc">0.8.0-rc.1 api docs ↗</a>
+<a class="button" href="/go/lightning/godoc">0.8.0-rc.2 api docs ↗</a>
 <a class="button" href="https://github.com/williamhorning/lightning" target="_blank">github ↗</a>
 </span></div><img alt="lightning logo" src="/assets/lightning.png"></div>
 
@@ -28,7 +28,7 @@ over half-a-million messages during just the summer of 2025.
 
 The framework consists of the core library, which is platform-agnostic, and
 plugins, which add support for specific platforms, such as Discord, Guilded,
-Revolt, and Telegram. The only platform-specific code is in the plugins, making
+Stoat, and Telegram. The only platform-specific code is in the plugins, making
 it possible to support new platforms without modifying your bot's core logic.
 
 ## architecture
@@ -50,7 +50,7 @@ directly, but the core library should be used instead.
 ## features
 
 - **Cross-platform**: the framework is designed to be cross-platform, with
-support for multiple platforms, including Discord, Guilded, Revolt, and
+support for multiple platforms, including Discord, Guilded, Stoat, and
 Telegram. More platforms can be added by creating new plugins.
 - **Attachment support**: the framework deals with attachments, allowing
 you to send and receive files, images, and other media by URL.

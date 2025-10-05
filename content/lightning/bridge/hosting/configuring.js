@@ -52,10 +52,10 @@ function generateConfig() {
 		}
 	}
 
-	if (data.get("enable_revolt")) {
+	if (data.get("enable_stoat")) {
 		config += "[plugins.revolt]\n";
 
-		const token = data.get("revolt_token");
+		const token = data.get("stoat_token");
 
 		if (token) {
 			config += `token = "${token}"\n\n`;
@@ -102,7 +102,7 @@ function handleToggles() {
 		const [id, inputs] of Object.entries({
 			"enable_discord": ["discord_token"],
 			"enable_guilded": ["guilded_token"],
-			"enable_revolt": ["revolt_token"],
+			"enable_stoat": ["stoat_token"],
 			"enable_telegram": [
 				"telegram_token",
 				"telegram_port",

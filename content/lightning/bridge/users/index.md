@@ -25,7 +25,7 @@ ot, ask whoever is hosting the bot for you for a link.
 
 - [Discord](/bolt/invite/discord)
 - [Guilded](/bolt/invite/guilded)
-- [Revolt](/bolt/invite/revolt)
+- [Stoat](/bolt/invite/stoat)
 - [Telegram](/bolt/invite/telegram)
 
 ## create a bridge

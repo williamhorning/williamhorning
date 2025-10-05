@@ -39,7 +39,7 @@ func getSecondSkeleton() string {
 			</li>
 			<li aria-label="guilded"><a href="/go/guilded"><img alt="guilded" src="/assets/guilded.svg"></a>
 			</li>
-			<li aria-label="revolt"><a href="/go/revolt"><img alt="revolt" src="/assets/revolt.svg"></a></li>
+			<li aria-label="stoat"><a href="/go/stoat"><img alt="stoat" src="/assets/stoat.svg"></a></li>
 			<li aria-label="telegram"><a href="/go/telegram"><img alt="telegram" src="/assets/telegram.svg"></a></li>
 		</ul>
 		<p aria-label="disclaimer">this site doesn't use cookies. all content is available under the MIT license.
@@ -76,7 +76,7 @@ const boltNav = `	<nav aria-label="main navigation">
 				<li aria-label="guilded"><a href="/bolt/invite/guilded"><img alt="guilded"
 							src="/assets/guilded.svg"></a>
 				</li>
-				<li aria-label="revolt"><a href="/bolt/invite/revolt"><img alt="revolt" src="/assets/revolt.svg"></a>
+				<li aria-label="stoat"><a href="/bolt/invite/stoat"><img alt="stoat" src="/assets/stoat.svg"></a>
 				</li>
 				<li aria-label="telegram"><a href="/bolt/invite/telegram"><img alt="telegram"
 							src="/assets/telegram.svg"></a></li>
@@ -101,7 +101,7 @@ const lightningNav = `	<nav aria-label="main navigation">
 				<li aria-label="guilded"><a href="/bolt/support/guilded"><img alt="guilded"
 							src="/assets/guilded.svg"></a>
 				</li>
-				<li aria-label="revolt"><a href="/bolt/support/revolt"><img alt="revolt" src="/assets/revolt.svg"></a>
+				<li aria-label="stoat"><a href="/bolt/support/stoat"><img alt="stoat" src="/assets/stoat.svg"></a>
 				</li>
 				<li aria-label="telegram"><a href="/bolt/support/telegram"><img alt="telegram"
 							src="/assets/telegram.svg"></a></li>

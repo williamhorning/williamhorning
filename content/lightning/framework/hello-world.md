@@ -29,7 +29,7 @@ Next, you'll need to add the Lightning framework to your project. You can do
 this by running:
 
 ```sh
-go get github.com/williamhorning/lightning@v0.8.0-rc.1
+go get github.com/williamhorning/lightning@v0.8.0-rc.2
 ```
 
 ## writing your bot
@@ -97,7 +97,7 @@ work, you'll need to add platform plugins.
 ## adding platform plugins
 
 Lightning supports multiple platforms via plugins. You can add support for
-Discord, Guilded, Revolt, and Telegram. To add a platform plugin, you'll
+Discord, Guilded, Stoat, and Telegram. To add a platform plugin, you'll
 need to do three steps:
 
 1. Import the plugin package
@@ -128,7 +128,7 @@ Note that this might return an error, so you should handle it appropriately.
 bot.UsePluginType(
     "discord",
     "",
-    map[string]any{"token": os.Getenv("DISCORD_BOT_TOKEN")},
+    map[string]string{"token": os.Getenv("DISCORD_BOT_TOKEN")},
 )
 ```
 
@@ -140,7 +140,7 @@ by providing a unique name as the second argument to `UsePluginType`:
 bot.UsePluginType(
     "discord",
     "my-other-bot", 
-    map[string]any{"token": os.Getenv("MY_OTHER_DISCORD_BOT_TOKEN")},
+    map[string]string{"token": os.Getenv("MY_OTHER_DISCORD_BOT_TOKEN")},
 )
 ```
 

@@ -20,7 +20,7 @@ icon = "bolt.png"
 
 ![community](/assets/community.svg)
 **Connecting Communities**
-Bolt bridges many popular messaging apps—such as Discord, Guilded, Revolt,
+Bolt bridges many popular messaging apps—such as Discord, Guilded, Stoat,
 and Telegram
 
 </div><div class="card">

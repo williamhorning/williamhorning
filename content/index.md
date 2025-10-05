@@ -18,9 +18,9 @@ icon = "logo.svg"
 ![Bolt logo](/assets/bolt-opengraph.png)
 ![Bolt logo](/assets/bolt-opengraph.png)
 
-Bolt, the hosted version of Lightning, is a chatbot which connects communities by bridging many popular messaging apps—such as Discord, Guilded, Revolt, and Telegram.
+Bolt, the hosted version of Lightning, is a chatbot which connects communities by bridging many popular messaging apps—such as Discord, Guilded, Stoat, and Telegram.
 
-[Invite the bot →](/bolt/invite)
+[Invite the bot →](/bolt)
 
 </div><div class="tile">
 
@@ -36,7 +36,7 @@ Lightning is an open-source chatbot which is easy to configure, runs on open-sou
 ![rvapi logo](/assets/rvapi.svg)
 ![rvapi logo](/assets/rvapi.svg)
 
-[rvapi](https://jsr.io/@jersey/rvapi) is a Revolt API library
+[rvapi](https://jsr.io/@jersey/rvapi) is a Stoat API library
 
 </div><div class="tile">
 

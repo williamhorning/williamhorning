@@ -20,7 +20,7 @@ icon = "lightning.png"
 
 ![build community](/assets/community.svg)
 **Connecting Communities**
-Lightning bridges many popular messaging apps—such as Discord, Guilded, Revolt,
+Lightning bridges many popular messaging apps—such as Discord, Guilded, Stoat,
 and Telegram
 
 </div><div class="card">
@@ -47,7 +47,7 @@ Lightning uses the strong typing, performance and simplicity of Go
 # the lightning bridge
 
 If you've ever had a community, chances are you talk to them in many places,
-whether that's Discord, Guilded, Revolt, or Telegram. Over time, you end up
+whether that's Discord, Guilded, Stoat, or Telegram. Over time, you end up
 with fragmentation as your community grows and changes, with many people using
 multiple messaging apps. People eventually grow tired of the differences
 between apps, and switching between them, with things becoming a mess.
@@ -57,7 +57,7 @@ what do you do, what options do you have?
 
 **Bridging!** Everyone can use their favorite app, gets the same messages, and
 is on the same page. Lightning is an easy to use bridge bot that supports
-Discord, Guilded, Revolt, and Telegram. To get started, check out the
+Discord, Guilded, Stoat, and Telegram. To get started, check out the
 [getting started guide](./users), which will walk you through using
 Bolt, the hosted version of the Lightning bot. If you want to self-host, read
 the [self-hosting guide](./hosting) to get started.
