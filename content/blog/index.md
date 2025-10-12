@@ -1,7 +1,7 @@
 +++
 title = "Blog · Jersey"
 description = "a random collection of posts"
-image = "clouds.png"
+image = "clouds.jpg"
 icon = "logo.svg"
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = "Jersey"
 description = "jersey's corner of the internet"
-image = "opengraph.png"
+image = "clouds.jpg"
 icon = "logo.svg"
 +++
 
