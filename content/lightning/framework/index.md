@@ -13,7 +13,7 @@ icon = "lightning.png"
 
 <span aria-label="button group">
 <a class="primary button" href="/lightning/framework/hello-world">get started -></a>
-<a class="button" href="/go/lightning/godoc">0.8.0-rc.4 api docs ↗</a>
+<a class="button" href="/go/lightning/godoc">0.8.0-rc.5 api docs ↗</a>
 <a class="button" href="https://github.com/williamhorning/lightning" target="_blank">github ↗</a>
 </span></div><img alt="lightning logo" src="/assets/lightning.png"></div>
 
