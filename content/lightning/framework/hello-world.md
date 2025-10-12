@@ -29,7 +29,7 @@ Next, you'll need to add the Lightning framework to your project. You can do
 this by running:
 
 ```sh
-go get github.com/williamhorning/lightning@v0.8.0-rc.2
+go get github.com/williamhorning/lightning@v0.8.0-rc.4
 ```
 
 ## writing your bot
