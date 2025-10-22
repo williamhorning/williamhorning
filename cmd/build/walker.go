@@ -89,7 +89,7 @@ func handleMarkdown(handle *os.File, input []byte, markdown goldmark.Markdown, r
 	}
 
 	if _, err := handle.WriteString(
-		getFirstSkeleton(strings.Split(relPath, "/")[0], meta.Title, meta.Description, meta.Icon, meta.Image),
+		getFirstSkeleton(relPath, strings.Split(relPath, "/")[0], meta.Title, meta.Description, meta.Icon, meta.Image),
 	); err != nil {
 		return fmt.Errorf("failed to write first skeleton: %w", err)
 	}

@@ -1,6 +1,11 @@
 package main
 
-func getFirstSkeleton(folder, title, description, icon, image string) string {
+import "strings"
+
+func getFirstSkeleton(relPath, folder, title, description, icon, image string) string {
+	canonical, _ := strings.CutSuffix(relPath, "index.md")
+	canonical, _ = strings.CutSuffix(canonical, ".md")
+
 	return `
 <!DOCTYPE html>
 <html lang="en">
@@ -10,12 +15,13 @@ func getFirstSkeleton(folder, title, description, icon, image string) string {
 	<title>` + title + `</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="` + description + `">
+	<link rel="canonical" href="https://williamhorning.dev/` + canonical + `" />
 	<link rel="stylesheet" href="/assets/inter/inter.css">
 	<link rel="stylesheet" href="/assets/cascadia/cascadia.css">
 	<link rel="stylesheet" href="/assets/style.css">
 	<link rel="icon" href="/assets/` + icon + `">
 	<meta property="og:title" content="` + title + `">
-	<meta property="og:image" content="https://williamhorning.eu.org/assets/` + image + `">
+	<meta property="og:image" content="https://williamhorning.dev/assets/` + image + `">
 	<meta property="og:description" content="` + description + `">
 </head>
 

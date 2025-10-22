@@ -97,7 +97,7 @@ you immediately and try to take action against those responsible.
 
 If you want a copy of your data, your data deleted, or to ask questions about
 the data used by Bolt, please email
-[bolt-data@williamhorning.eu.org](mailto:bolt-data@williamhorning.eu.org).
+[bolt-data@williamhorning.dev](mailto:bolt-data@williamhorning.dev).
 
 ---
 
