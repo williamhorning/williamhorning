@@ -25,7 +25,7 @@ And, to host the bot, there are two possible options:
 2. Install the `lightning` cli:
 
 ```sh
-go install github.com/williamhorning/lightning/cmd/lightning@v0.8.0-rc.5
+go install github.com/williamhorning/lightning/cmd/lightning@v0.8.0-rc.6
 ```
 
 3. Put the `lightning.toml` file in your current working directory
