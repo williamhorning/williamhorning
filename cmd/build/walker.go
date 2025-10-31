@@ -78,10 +78,11 @@ func handleMarkdown(handle *os.File, input []byte, markdown goldmark.Markdown, r
 	data := frontmatter.Get(ctx)
 
 	var meta struct {
-		Title       string `toml:"title"`
-		Description string `toml:"description"`
-		Image       string `toml:"image"`
-		Icon        string `toml:"icon"`
+		Title       string  `toml:"title"`
+		Description string  `toml:"description"`
+		Image       string  `toml:"image"`
+		Icon        string  `toml:"icon"`
+		Module      *string `toml:"mod"`
 	}
 
 	if err := data.Decode(&meta); err != nil {
@@ -89,7 +90,7 @@ func handleMarkdown(handle *os.File, input []byte, markdown goldmark.Markdown, r
 	}
 
 	if _, err := handle.WriteString(
-		getFirstSkeleton(relPath, strings.Split(relPath, "/")[0], meta.Title, meta.Description, meta.Icon, meta.Image),
+		getFirstSkeleton(relPath, strings.Split(relPath, "/")[0], meta.Title, meta.Description, meta.Icon, meta.Image, meta.Module),
 	); err != nil {
 		return fmt.Errorf("failed to write first skeleton: %w", err)
 	}

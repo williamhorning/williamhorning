@@ -2,7 +2,7 @@ package main
 
 import "strings"
 
-func getFirstSkeleton(relPath, folder, title, description, icon, image string) string {
+func getFirstSkeleton(relPath, folder, title, description, icon, image string, module *string) string {
 	canonical, _ := strings.CutSuffix(relPath, "index.md")
 	canonical, _ = strings.CutSuffix(canonical, ".md")
 
@@ -15,8 +15,20 @@ func getFirstSkeleton(relPath, folder, title, description, icon, image string) s
 	<title>` + title + `</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="` + description + `">
-	<link rel="canonical" href="https://williamhorning.dev/` + canonical + `" />
-	<link rel="stylesheet" href="/assets/inter/inter.css">
+	<link rel="canonical" href="https://williamhorning.dev/` + canonical + `" />` +
+		func() string {
+			if module != nil {
+				return `<meta name="go-import" content="williamhorn.ing/` + *module +
+					` git https://github.com/williamhorning/` + *module +
+					`"><meta name="go-source" content="williamhorn.ing/` + *module +
+					` _ https://github.com/williamhorning/` + *module +
+					`/tree/develop{/dir} https://github.com/williamhorning/` + *module +
+					`/tree/develop{/dir}/{file}#L{line}">`
+			}
+
+			return ""
+		}() +
+		`<link rel="stylesheet" href="/assets/inter/inter.css">
 	<link rel="stylesheet" href="/assets/cascadia/cascadia.css">
 	<link rel="stylesheet" href="/assets/style.css">
 	<link rel="icon" href="/assets/` + icon + `">

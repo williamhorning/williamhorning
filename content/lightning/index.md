@@ -3,6 +3,7 @@ title = "Lightning · Jersey"
 description = "truly powerful cross-platform bots"
 image = "lightning-opengraph.png"
 icon = "lightning.png"
+mod = "lightning"
 +++
 
 <div class="hero"><div>
